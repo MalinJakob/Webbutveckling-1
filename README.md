@@ -1,3 +1,3 @@
-# Project 1&2 within the course Webbutveckling 1 
+# Webbutveckling 1 
 
-The project is about creating a webpage with information about yourself. 
+All the assignments within the course Webbutveckling 1.
