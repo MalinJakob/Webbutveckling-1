@@ -17,7 +17,7 @@
   <body>
     <!-- start of header of the page, with navigation bar-->
     <header>
-      <h1>Welcome to my webpage - <i>Home of Malin Jakob</i></h1>
+      <h1 id="top"> Welcome to my page - <i>Home of Malin Jakob</i></h1>
       <!--start of navigation bar-->
       <nav>
         <ul>
@@ -81,7 +81,7 @@
           <header>
             <h2>New Insights</h2>
           </header>
-          <p>I really like to code</p>
+          <p>I <em>really</em> like to code</p>
         </article>
       </section>
       <!-- end of article 2, Latest News -->
@@ -94,24 +94,50 @@
         <article>
           <header>
             <h3>Cognitive Science, what is that?</h3>
-          </header>
             <p>
-              If you never heard of Cognitive Science, here is a link to a great
-              definition created by
-              <cite> John Hopkins krieger school of arts & sciences</cite>
+              If you never heard of Cognitive Science,<br />
+              here is a link to a great definition.
             </p>
-            <a href="https://cogsci.jhu.edu/about/" target="_blank"
-              >CLICK HERE</a
-            >
-<!-- side part for interesting articles -->
-            <aside>
-              <h3>Read More Articles Here</h3>
-              <ul>
-                <li><a href="https://hms.harvard.edu/news-events/publications-archive/brain/dancing-brain"
-                  target="_blank">Dance & the Brain</a></li>
-                <li><a href="https://uxmag.com/articles/how-cognitive-science-and-artificial-intelligence-are-intertwined" target="_blank">Cognitive Science and AI</a></li>
-              </ul>
-            </aside>
+          </header>
+          <a href="https://cogsci.jhu.edu/about/" target="_blank">
+            <img
+              src="Images/johnCS.png"
+              alt="an image of the articles first page"
+              width="350"
+              height="255"
+            />
+          </a>
+          <footer>
+            <p>
+              <cite
+                >John Hopkins Krieger School of Arts & Sciences, Department of
+                Cognitive Science</cite
+              ><br />
+              Reference taken
+              <time datetime="2024-08-08">September 8, 2024</time>
+            </p>
+          </footer>
+
+          <!-- side part for interesting articles -->
+          <aside>
+            <h3>Read More Articles Here</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://hms.harvard.edu/news-events/publications-archive/brain/dancing-brain"
+                  target="_blank"
+                  >Dance & the Brain</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://uxmag.com/articles/how-cognitive-science-and-artificial-intelligence-are-intertwined"
+                  target="_blank"
+                  >Cognitive Science and AI</a
+                >
+              </li>
+            </ul>
+          </aside>
         </article>
       </section>
     </main>
@@ -133,7 +159,7 @@
       <!-- navigation back to the top -->
       <section>
         <nav>
-          <a href="home.html">BACK TO THE TOP</a>
+          <a href="#top">BACK TO THE TOP</a>
         </nav>
       </section>
 
