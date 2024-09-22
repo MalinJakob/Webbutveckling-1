@@ -17,7 +17,7 @@
   <body>
     <!-- start of header of the page, with navigation bar-->
     <header>
-      <h1 id="top"> Welcome to my page - <i>Home of Malin Jakob</i></h1>
+      <h1 id="top">Welcome to my page - <i>Home of Malin Jakob</i></h1>
       <!--start of navigation bar-->
       <nav>
         <ul>
@@ -29,14 +29,26 @@
         </ul>
       </nav>
       <picture>
-        <source srcset="Images/1-profilbild-progressive-90.jpeg" type="image/jpeg">
-        <source srcset="Images/1-profilbild-progressive-90.png" type="image/png">
-        <source srcset="Images/1-profilbild-pejrogressive-20.jpeg" type="image/jpeg">
-        <img src="Images/1-profilbild-progressive-90.jpeg" alt="a profile picture of me standing in front of bushes with white flowers">
+        <source
+          srcset="Images/1-profilbild-progressive-90.jpeg"
+          type="image/jpeg"
+        />
+        <source
+          srcset="Images/1-profilbild-progressive-90.png"
+          type="image/png"
+        />
+        <source
+          srcset="Images/1-profilbild-pejrogressive-20.jpeg"
+          type="image/jpeg"
+        />
+        <img
+          src="Images/1-profilbild-progressive-90.jpeg"
+          alt="a profile picture of me standing in front of bushes with white flowers"
+        />
       </picture>
     </header>
     <!-- end of header of the page, with navigation bar-->
-  
+
     <!-- main content of home page-->
     <main>
       <h2>The journey from a total beginner to a semi pro</h2>
@@ -147,6 +159,57 @@
           </aside>
         </article>
       </section>
+
+      <header>
+        <h2>How About You?</h2>
+        <p>
+          Do you want to start learning HTML and do this journey with me? Answer
+          this form and maybe we can do this together.
+        </p>
+      </header>
+      <form
+        action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php"
+        method="post"
+      >
+        <fieldset>
+          <legend>Your Details:</legend>
+          <label>
+            Name:
+            <input type="text" name="name" size="30" maxlength="100" />
+          </label>
+          <br />
+          <br />
+          <label
+            >Email:
+            <input type="email" name="email" size="30" maxlength="100" />
+          </label>
+          <br />
+          <br />
+          <label
+            >Website:
+            <input type="url" name="website" size="30" maxlength="100" />
+          </label>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Demographics</legend>
+          <label for="about-yourself">Who are you?</label>
+          <textarea name="about" rows="4" cols="50">
+Write about yourself</textarea
+          >
+          <br>
+          <br>
+          <label>
+          <input type="radio" name="gender" value="woman">Woman
+          </label>
+          <label>
+            <input type="radio" name="gender" value="man">Man
+          </label>
+          <label>
+            <input type="radio" name="gender" value="other">Other
+          </label>
+        </fieldset>
+      </form>
     </main>
 
     <footer>
