@@ -170,44 +170,160 @@
       <form
         action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php"
         method="post"
+        enctype="multipart/form-data"
       >
         <fieldset>
-          <legend>Your Details:</legend>
-          <label>
-            Name:
-            <input type="text" name="name" size="30" maxlength="100" />
-          </label>
+          <legend><b>Your Details</b></legend>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            size="30"
+            maxlength="100"
+            placeholder="John Doe"
+            autofocus
+            required
+          />
           <br />
           <br />
-          <label
-            >Email:
-            <input type="email" name="email" size="30" maxlength="100" />
-          </label>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            size="30"
+            maxlength="100"
+            placeholder="JohnDoe@gmail.com"
+            required
+          />
           <br />
           <br />
-          <label
-            >Website:
-            <input type="url" name="website" size="30" maxlength="100" />
-          </label>
+          <label for="phone">Phone:</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            size="30"
+            pattern="[+]46)\s*(7[0236])\s*(\d{4})\s*(\d{3})$"
+            title="The phone number need to be in the format +46712 345 678"
+            required
+            placeholder="+46 712 345 678"
+          />
+          <br />
+          <br />
+          <label for="city">Home Town:</label>
+          <input
+            list="city"
+            id="my-city"
+            name="my-city"
+            size="40"
+            placeholder="Write your city or choose from list"
+            required
+          />
+          <datalist id="city">
+            <option value="Gothenburg"></option>
+            <option value="Malmö"></option>
+            <option value="Stockholm"></option>
+          </datalist>
+
+          <br />
+          <br />
+          <label for="website">Website:</label>
+          <input
+            type="url"
+            id="website"
+            name="website"
+            size="30"
+            maxlength="100"
+            placeholder="www.johndoe.com"
+            required
+          />
         </fieldset>
         <br />
         <fieldset>
-          <legend>Demographics</legend>
-          <label for="about-yourself">Who are you?</label>
-          <textarea name="about" rows="4" cols="50">
+          <legend><b>Demographics</b></legend>
+          <label for="about-yourself"></label>
+          <textarea name="about-yourself" rows="4" cols="60">
 Write about yourself</textarea
           >
-          <br>
-          <br>
-          <label>
-          <input type="radio" name="gender" value="woman">Woman
-          </label>
-          <label>
-            <input type="radio" name="gender" value="man">Man
-          </label>
-          <label>
-            <input type="radio" name="gender" value="other">Other
-          </label>
+          <br />
+          <br />
+          <label for="woman">Gender:</label>
+          <input type="radio" class="gender" name="woman" value="woman" />Woman
+          <label for="man"></label>
+          <input type="radio" class="gender" name="man" value="man" />Man
+          <label for="other"></label>
+          <input type="radio" class="gender" name="other" value="other" />Other
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend><b>Former Knowledge</b></legend>
+          Box the languages you are familiar with:
+          <br />
+          <label for="html">HTML</label>
+          <input type="checkbox" class="language" name="html" value="HTML" />
+          <label for="css">CSS</label>
+          <input type="checkbox" class="language" name="css" value="CSS" />
+          <label for="JavaScript">JavaScript</label>
+          <input
+            type="checkbox"
+            class="language"
+            name="JavaScript"
+            value="JavaScript"
+          />
+          <br />
+          <br />
+          <label for="preferred-language">Preferred Language:</label>
+          <select name="preferred-language">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+          </select>
+          <br />
+          <br />
+          <label for="up-load">Upload Your CV:</label>
+          <input type="file" name="up-load" />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend><b>Feedback</b></legend>
+          Do you want an answer sent back?
+          <label for="answer-yes"></label>
+          <input type="checkbox" class="language" name="yes" value="YES" />
+          <br />
+          <br />
+          <label for="yes"
+            >Do you want a copy of the message from the form?</label
+          >
+          <input type="radio" name="yes" class="copy" value="yes" />Yes
+          <label for="no"></label>
+          <input type="radio" name="no" class="copy" value="no" />No
+          <br />
+          <br />
+          <label for="own-topic">Choose Own Topic for The Message</label>
+          <input
+            list="topic"
+            id="own-topic"
+            name="own-topic"
+            size="40"
+            placeholder="Write your chosen topic or choose from list"
+          />
+          <br />
+          <br />
+          <datalist id="topics">
+            <option value="Feedback"></option>
+            <option value="Critics"></option>
+            <option value="Questions"></option>
+          </datalist>
+          <textarea name="chosen-topic" id="chosen-topic" rows="4" cols="60">
+Write about your chosen topic</textarea
+          >
+        </fieldset>
+        <fieldset>
+          <legend><b>Done?</b></legend>
+          <label for="submit"></label>
+          <input type="submit" name="submit" >
         </fieldset>
       </form>
     </main>
