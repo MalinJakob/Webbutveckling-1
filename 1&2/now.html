@@ -11,21 +11,12 @@
     />
     <meta name="generator" content="Visual Studio Code" />
     <meta name="keywords" content="CSS,HTML,success" />
-    <!--end of meta tags to document-->
+    <link rel="stylesheet" type="text/css" href="styles/test1.css?rnd=12345" />
     <title>Home of Malin Jakob</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1 id="top">Me, right now - <i>Malin Jakob</i></h1>
-      <nav>
-        <ul>
-          <li><a href="home.html">HOME</a></li>
-          <li><a href="history.html">HISTORY</a></li>
-          <li><a href="now.html">NOW</a></li>
-          <li><a href="future.html">FUTURE</a></li>
-          <!--end of navigation bar-->
-        </ul>
-      </nav>
       <picture>
         <source srcset="Images/1-profilbild-progressive-90.jpeg" type="image/jpeg">
         <source srcset="Images/1-profilbild-progressive-90.png" type="image/png">
@@ -33,200 +24,203 @@
         <img src="Images/1-profilbild-progressive-90.jpeg" alt="a profile picture of me standing in front of bushes with white flowers">
       </picture>
     </header>
-    <!-- main content on the now page -->
-    <main>
-      <section>
-        <header>
-          <h2>What Am I doing at The Moment?</h2>
-          <p>
-            At the present I am learning how to create a webpage from scratch.
-            For now I can some basic HTML code and starting to learn more about
-            CSS. Every day I am learning some new elements and ways to structure code
-            more correctly (better I guess). The most tangible thing I am doing
-            at the moment is starting to understand code in genal and the
-            way computer work. Pretty cool, actually! 
-          </p>
-        </header>
-        <article>
+    <div class="container">
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="history.html">HISTORY</a></li>
+          <li><a href="now.html">NOW</a></li>
+          <li><a href="future.html">FUTURE</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section>
           <header>
-            <h3>This is what I am working on at the moment</h3>
-          </header>
-          <h4>Learning Agenda</h4>
-          <ul>
-            <li>Adding semantic markups to my webpage</li>
-            <li>Learning how to apply CSS to my HTML documents</li>
-            <li>Using Git and GitHub for my repositories</li>
-          </ul>
-          <h4>Projects</h4>
-          <p>
-            This week we are looking att images, videos & audio for the web.
-            This is regard of the format and how it behaves on the site. These
-            three different (but very the same) pictures of me are saved with
-            different setting regarding progressivity & compression ratio.
-          </p>
-          <figure>
-            <img
-              src="Images/1-profilbild-pejrogressive-20.jpeg"
-              alt="a profile picture of me standing in front of bushes with white flowers"
-            />
-            <figcaption>
-              This images is saved without progressivity and the compression
-              ratio set to 20.
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              src="Images/1-profilbild-progressive-20.jpeg"
-              alt="a profile picture of me standing in front of bushes with white flowers"
-            />
-            <figcaption>
-              This images is saved with progressivity and the compression ratio
-              set to 20.
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              src="Images/1-profilbild-progressive-90.jpeg"
-              alt="a profile picture of me standing in front of bushes with white flowers"
-            />
-            <figcaption>
-              This images is saved with progressivity and the compression ratio
-              set to 90.
-            </figcaption>
-          </figure>
-        </article>
-
-        <article>
-          <header>
-            <h3>Things I Learned this Week</h3>
+            <h2>What Am I doing at The Moment?</h2>
             <p>
-              It is nice to keep track of what you have learned so, first of
-              all,<br />you do not forget but also that you can se your
-              progress.
+              At the present I am learning how to create a webpage from scratch.
+              For now I can some basic HTML code and starting to learn more about
+              CSS. Every day I am learning some new elements and ways to structure code
+              more correctly (better I guess). The most tangible thing I am doing
+              at the moment is starting to understand code in genal and the
+              way computer work. Pretty cool, actually! 
             </p>
           </header>
-          <table>
-            <caption>
-              HTML Knowledge Captured
-            </caption>
-            <colgroup>
-              <col span="1" style="background-color: #f4dcf2" />
-              <col span="6" style="background-color: #facbf9" />
-            </colgroup>
-            <thead>
+          <article>
+            <header>
+              <h3>This is what I am working on at the moment</h3>
+            </header>
+            <h4>Learning Agenda</h4>
+            <ul>
+              <li>Adding semantic markups to my webpage</li>
+              <li>Learning how to apply CSS to my HTML documents</li>
+              <li>Using Git and GitHub for my repositories</li>
+            </ul>
+            <h4>Projects</h4>
+            <p>
+              This week we are looking att images, videos & audio for the web.
+              This is regard of the format and how it behaves on the site. These
+              three different (but very the same) pictures of me are saved with
+              different setting regarding progressivity & compression ratio.
+            </p>
+            <figure>
+              <img
+              src="Images/1-profilbild-pejrogressive-20.jpeg"
+              alt="a profile picture of me standing in front of bushes with white flowers"
+              />
+              <figcaption>
+                This images is saved without progressivity and the compression
+                ratio set to 20.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+              src="Images/1-profilbild-progressive-20.jpeg"
+              alt="a profile picture of me standing in front of bushes with white flowers"
+              />
+              <figcaption>
+                This images is saved with progressivity and the compression ratio
+                set to 20.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+              src="Images/1-profilbild-progressive-90.jpeg"
+              alt="a profile picture of me standing in front of bushes with white flowers"
+              />
+              <figcaption>
+                This images is saved with progressivity and the compression ratio
+                set to 90.
+              </figcaption>
+            </figure>
+          </article>
+          
+          <article>
+            <header>
+              <h3>Things I Learned this Week</h3>
+              <p>
+                It is nice to keep track of what you have learned so, first of
+                all,<br />you do not forget but also that you can se your
+                progress.
+              </p>
+            </header>
+            <table>
+              <caption>
+                HTML Knowledge Captured
+              </caption>
+              <colgroup>
+                <col span="1" style="background-color: #f4dcf2" />
+                <col span="6" style="background-color: #facbf9" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Elements</th>
+                  <th>Attributes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Table</th>
+                  <td>&lt;table&gt;</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Table Row</th>
+                  <td>&lt;tr&gt;</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Table Heading</th>
+                  <td>&lt;th&gt;</td>
+                  <td>rowspan</td>
+                </tr>
+                <tr>
+                  <th>Table Data</th>
+                  <td>&lt;td&gt;</td>
+                  <td>rowspan</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <header>
+              <h3>Hours Spent Studying</h3>
+            </header>
+            <table>
+              <caption>
+                Hours Spent
+              </caption>
+              <colgroup>
+                <col span="1" style="background-color: #f4d0d4" />
+                <col span="6" style="background-color: #ffc0cb" />
+              </colgroup>
               <tr>
-                <th>Name</th>
-                <th>Elements</th>
-                <th>Attributes</th>
+                <th></th>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Wednesday</th>
+                <th scope="col">Thursday</th>
+                <th scope="col">Friday</th>
               </tr>
-            </thead>
-            <tbody>
               <tr>
-                <th>Table</th>
-                <td>&lt;table&gt;</td>
+                <th scope="row">Hours w.36</th>
+                <td>3</td>
+                <td>2</td>
+                <td>4</td>
+                <td>3</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">Hours w.37</th>
+                <td>3</td>
+                <td>2</td>
+                <td>4</td>
+                <td>3</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">Total Hours</th>
+                <td>28</td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td></td>
               </tr>
-              <tr>
-                <th>Table Row</th>
-                <td>&lt;tr&gt;</td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>Table Heading</th>
-                <td>&lt;th&gt;</td>
-                <td>rowspan</td>
-              </tr>
-              <tr>
-                <th>Table Data</th>
-                <td>&lt;td&gt;</td>
-                <td>rowspan</td>
-              </tr>
-            </tbody>
-          </table>
-        </article>
-        <article>
+            </table>
+          </article>
+        </section>
+        <section>
           <header>
-            <h3>Hours Spent Studying</h3>
+            <h3>Read More</h3>
           </header>
-          <table>
-            <caption>
-              Hours Spent
-            </caption>
-            <colgroup>
-              <col span="1" style="background-color: #f4d0d4" />
-              <col span="6" style="background-color: #ffc0cb" />
-            </colgroup>
-            <tr>
-              <th></th>
-              <th scope="col">Monday</th>
-              <th scope="col">Tuesday</th>
-              <th scope="col">Wednesday</th>
-              <th scope="col">Thursday</th>
-              <th scope="col">Friday</th>
-            </tr>
-            <tr>
-              <th scope="row">Hours w.36</th>
-              <td>3</td>
-              <td>2</td>
-              <td>4</td>
-              <td>3</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <th scope="row">Hours w.37</th>
-              <td>3</td>
-              <td>2</td>
-              <td>4</td>
-              <td>3</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <th scope="row">Total Hours</th>
-              <td>28</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
-        </article>
-      </section>
-
-      <section>
-        <header>
-          <h3>Read More</h3>
-        </header>
-        <details>
-          <summary>Q&A</summary>
-          <ol>
-            <li>Q: What are you doing right now? <br />A: Coding a webpage</li>
-            <li>Q: Do you like programming? <br />A: YES!</li>
-            <li>Q: Do you find it difficult? <br />A: Yes sometimes</li>
-          </ol>
-        </details>
-      </section>
-    </main>
-    <footer>
-      <section>
+          <details>
+            <summary>Q&A</summary>
+            <ol>
+              <li>Q: What are you doing right now? <br />A: Coding a webpage</li>
+              <li>Q: Do you like programming? <br />A: YES!</li>
+              <li>Q: Do you find it difficult? <br />A: Yes sometimes</li>
+            </ol>
+          </details>
+        </section>
+      </div>
+      </main>
+      <footer class="footer">
         <h4>Contact</h4>
         <address>
           <p>
-            Email:<a href="mailto:malin.jakob98@gmail.com"
-              >Malin.jakob98@gmail.com</a
-            >
+          Email:<a href="mailto:malin.jakob98@gmail.com"
+            >Malin.jakob98@gmail.com</a
+          >
           </p>
           <p>Phone: <a href="tel:+123456789">123456789</a></p>
         </address>
-      </section>
-      <section>
         <nav>
           <a href="#top">BACK TO THE TOP</a>
         </nav>
-      </section>
-
-      <section>
-        <p>&copy; 2024 Malin Jakob AB</p>
-      </section>
+        <section>
+          <p>&copy; 2024 Malin Jakob AB</p>
+        </section>
     </footer>
   </body>
 </html>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--start of meta tags to document-->
     <meta charset="utf-8" />
     <meta name="application-name" content="Malins Webpage" />
     <meta name="author" content="Malin Jakob" />
@@ -11,23 +10,13 @@
     />
     <meta name="generator" content="Visual Studio Code" />
     <meta name="keywords" content="CSS,HTML,adventure" />
-    <!--end of meta tags to document-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/test1.css?rnd=12345" />
     <title>Home of Malin Jakob</title>
   </head>
   <body>
-    <!-- start of header of the page, with navigation bar-->
-    <header>
-      <h1 id="top">Welcome to my page - <i>Home of Malin Jakob</i></h1>
-      <!--start of navigation bar-->
-      <nav>
-        <ul>
-          <li><a href="home.html">HOME</a></li>
-          <li><a href="history.html">HISTORY</a></li>
-          <li><a href="now.html">NOW</a></li>
-          <li><a href="future.html">FUTURE</a></li>
-          <!--end of navigation bar-->
-        </ul>
-      </nav>
+    <header class="main-header">
+      <h1 class="header-other" id="top">Welcome to my page - <i>Home of Malin Jakob</i></h1>
       <picture>
         <source
           srcset="Images/1-profilbild-progressive-90.jpeg"
@@ -47,197 +36,182 @@
         />
       </picture>
     </header>
-    <!-- end of header of the page, with navigation bar-->
-
-    <!-- main content of home page-->
-    <main>
-      <h2>The journey from a total beginner to a semi pro</h2>
-      <blockquote>
-        I never thought that I would start writing code on a computer, duh I was
-        suppose to become a DANCER...
-      </blockquote>
-      <p>
-        It all started when COVID-19 struck, I lost my job and now I got a real
-        kick in the but.
-        <i
-          >Which occupation could I see myself love, even after 30 years of
-          doing it?</i
-        >
-        I know for sure that it is not working as a saleswoman at Stadium, at
-        least. When looking at educations and schools for me to apply I found
-        <dfn>Cognitive Science</dfn> and a light struck. Me, a former dancer,
-        becoming a bridge between the IT-world and the people around us. My
-        education begun to teach us about the human mind,
-        <i>the brain and all that jazz.</i> And now, it is time for the IT part.
-        The journey to become familiar with
-        <mark>programming, code and computers.</mark>
-        <b>Scary, by all means</b>
-      </p>
-      <!-- end of main content of home page-->
-
-      <!-- put latest news & new insihts between next to eachother, create boxes, outlines -->
-      <!-- start of article  1, Latest New -->
-      <section>
-        <article>
+    <div class="container">
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="history.html">HISTORY</a></li>
+          <li><a href="now.html">NOW</a></li>
+          <li><a href="future.html">FUTURE</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section>
           <header>
-            <h2>Latest News</h2>
+            <h2>The journey from a total beginner to a semi pro</h2>
           </header>
+          <blockquote>
+            I never thought that I would start writing code on a computer, duh I was
+            suppose to become a DANCER...
+          </blockquote>
           <p>
-            Starting Webbutveckling 1 to start this journey. On the weeks agenda
-            is the following :
+            It all started when COVID-19 struck, I lost my job and now I got a real
+            kick in the but.
+            <i
+            >Which occupation could I see myself love, even after 30 years of
+            doing it?</i
+            >
+            I know for sure that it is not working as a saleswoman at Stadium, at
+            least. When looking at educations and schools for me to apply I found
+            <dfn>Cognitive Science</dfn> and a light struck. Me, a former dancer,
+            becoming a bridge between the IT-world and the people around us. My
+            education begun to teach us about the human mind,
+            <i>the brain and all that jazz.</i> And now, it is time for the IT part.
+            The journey to become familiar with
+            <mark>programming, code and computers.</mark>
+            <b>Scary, by all means</b>
           </p>
-          <dl>
-            <dt><b>HTML</b></dt>
-            <dd>HyperText Markup Language</dd>
-            <dt><b>CSS</b></dt>
-            <dd>Cascading Style Sheets</dd>
-            <dt><b>Git</b></dt>
-            <dd>Global Information Tracker</dd>
-          </dl>
-        </article>
-        <!-- start of article 2 -->
-        <article>
+        </section>
+        <section>
+          <article>
+            <header>
+              <h2>Latest News</h2>
+            </header>
+            <p>
+              Starting Webbutveckling 1 to start this journey. On the weeks agenda
+              is the following :
+            </p>
+            <dl>
+              <dt><b>HTML</b></dt>
+              <dd>HyperText Markup Language</dd>
+              <dt><b>CSS</b></dt>
+              <dd>Cascading Style Sheets</dd>
+              <dt><b>Git</b></dt>
+              <dd>Global Information Tracker</dd>
+            </dl>
+          </article>
+          <article>
+            <header>
+              <h2>New Insights</h2>
+            </header>
+            <p>I <em>really</em> like to code. It is starting to grow on me and the more you learn the more fun it gets. I thought that coding was very mathematical, it is, but in some ways an easier and more tangible math or rather logistic then I first thought.</p>
+          </article>
+        </section>
+        <section class="learn-more">
           <header>
-            <h2>New Insights</h2>
+            <h2>Learn More</h2>
           </header>
-          <p>I <em>really</em> like to code</p>
-        </article>
-      </section>
-      <!-- end of article 2, Latest News -->
+          <div class="articles">
 
-      <!-- more information about additional information -->
-      <section>
+            <article >
+              <header>
+                <h3>Cognitive Science, what is that?</h3>
+              </header>
+              <p class="alternative-text">
+                If you never heard of Cognitive Science, you are not alone. It is a science focusing on the brain, the mind and the representations of knowledge. It contains a lot of other disciplines, like psychology, philosophy, computer science and some few more.  <br />
+                Here is a link to a great definition by the John Hopkins institution.
+                <a href="https://cogsci.jhu.edu/about/" target="_blank">Click here
+                </a>
+              </p>
+              <aside class="aside">
+                <h3>Read More Articles Here</h3>
+                <ul class="article-list">
+                  <li>
+                    <a
+                    href="https://hms.harvard.edu/news-events/publications-archive/brain/dancing-brain"
+                    target="_blank"
+                    >Dance & the Brain</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                    href="https://uxmag.com/articles/how-cognitive-science-and-artificial-intelligence-are-intertwined"
+                    target="_blank"
+                    >Cognitive Science and AI</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </article>
+          </div>
+        </section>
         <header>
-          <h2>Learn More</h2>
+          <h2>How About You?</h2>
+          <p>
+            Do you want to start learning HTML and do this journey with me? Answer
+            this form and maybe we can do this together.
+          </p>
         </header>
-        <article>
-          <header>
-            <h3>Cognitive Science, what is that?</h3>
-            <p>
-              If you never heard of Cognitive Science,<br />
-              here is a link to a great definition.
-            </p>
-          </header>
-          <a href="https://cogsci.jhu.edu/about/" target="_blank">
-            <img
-              src="Images/johnCS.png"
-              alt="an image of the articles first page"
-              width="350"
-              height="255"
-            />
-          </a>
-          <footer>
-            <p>
-              <cite
-                >John Hopkins Krieger School of Arts & Sciences, Department of
-                Cognitive Science</cite
-              ><br />
-              Reference taken
-              <time datetime="2024-08-08">September 8, 2024</time>
-            </p>
-          </footer>
-
-          <!-- side part for interesting articles -->
-          <aside>
-            <h3>Read More Articles Here</h3>
-            <ul>
-              <li>
-                <a
-                  href="https://hms.harvard.edu/news-events/publications-archive/brain/dancing-brain"
-                  target="_blank"
-                  >Dance & the Brain</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://uxmag.com/articles/how-cognitive-science-and-artificial-intelligence-are-intertwined"
-                  target="_blank"
-                  >Cognitive Science and AI</a
-                >
-              </li>
-            </ul>
-          </aside>
-        </article>
-      </section>
-
-      <header>
-        <h2>How About You?</h2>
-        <p>
-          Do you want to start learning HTML and do this journey with me? Answer
-          this form and maybe we can do this together.
-        </p>
-      </header>
-      <form
+        <form
         action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php"
         method="post"
         enctype="multipart/form-data"
-      >
+        >
         <fieldset>
           <legend><b>Your Details</b></legend>
           <label for="name">Name:</label>
           <input
-            type="text"
-            id="name"
-            name="name"
-            size="30"
-            maxlength="100"
-            placeholder="John Doe"
-            autofocus
-            required
+          type="text"
+          id="name"
+          name="name"
+          size="30"
+          maxlength="100"
+          placeholder="John Doe"
+          autofocus
+          required
           />
           <br />
           <br />
           <label for="email">Email:</label>
           <input
-            type="email"
-            id="email"
-            name="email"
-            size="30"
-            maxlength="100"
-            placeholder="JohnDoe@gmail.com"
-            required
+          type="email"
+          id="email"
+          name="email"
+          size="30"
+          maxlength="100"
+          placeholder="JohnDoe@gmail.com"
+          required
           />
           <br />
           <br />
           <label for="phone">Phone:</label>
           <input
-            type="text"
-            id="phone"
-            name="phone"
-            size="30"
-            pattern="[+]46)\s*(7[0236])\s*(\d{4})\s*(\d{3})$"
-            title="The phone number need to be in the format +46712 345 678"
-            required
-            placeholder="+46 712 345 678"
+          type="text"
+          id="phone"
+          name="phone"
+          size="30"
+          pattern="[+]46)\s*(7[0236])\s*(\d{4})\s*(\d{3})$"
+          title="The phone number need to be in the format +46712 345 678"
+          required
+          placeholder="+46 712 345 678"
           />
           <br />
           <br />
           <label for="city">Home Town:</label>
           <input
-            list="city"
-            id="my-city"
-            name="my-city"
-            size="40"
-            placeholder="Write your city or choose from list"
-            required
+          list="city"
+          id="my-city"
+          name="my-city"
+          size="40"
+          placeholder="Write your city or choose from list"
+          required
           />
           <datalist id="city">
             <option value="Gothenburg"></option>
             <option value="Malmö"></option>
             <option value="Stockholm"></option>
           </datalist>
-
           <br />
           <br />
           <label for="website">Website:</label>
           <input
-            type="url"
-            id="website"
-            name="website"
-            size="30"
-            maxlength="100"
-            placeholder="www.johndoe.com"
-            required
+          type="url"
+          id="website"
+          name="website"
+          size="30"
+          maxlength="100"
+          placeholder="www.johndoe.com"
+          required
           />
         </fieldset>
         <br />
@@ -245,94 +219,92 @@
           <legend><b>Demographics</b></legend>
           <label for="about-yourself"></label>
           <textarea name="about-yourself" rows="4" cols="60">
-Write about yourself</textarea
-          >
+            Write about yourself</textarea
+            >
+            <br />
+            <br />
+            <label for="woman">Gender:</label>
+            <input type="radio" class="gender" name="woman" value="woman" />Woman
+            <label for="man"></label>
+            <input type="radio" class="gender" name="man" value="man" />Man
+            <label for="other"></label>
+            <input type="radio" class="gender" name="other" value="other" />Other
+          </fieldset>
           <br />
-          <br />
-          <label for="woman">Gender:</label>
-          <input type="radio" class="gender" name="woman" value="woman" />Woman
-          <label for="man"></label>
-          <input type="radio" class="gender" name="man" value="man" />Man
-          <label for="other"></label>
-          <input type="radio" class="gender" name="other" value="other" />Other
-        </fieldset>
-        <br />
-        <fieldset>
-          <legend><b>Former Knowledge</b></legend>
-          Box the languages you are familiar with:
-          <br />
-          <label for="html">HTML</label>
-          <input type="checkbox" class="language" name="html" value="HTML" />
-          <label for="css">CSS</label>
-          <input type="checkbox" class="language" name="css" value="CSS" />
-          <label for="JavaScript">JavaScript</label>
-          <input
+          <fieldset>
+            <legend><b>Former Knowledge</b></legend>
+            Box the languages you are familiar with:
+            <br />
+            <label for="html">HTML</label>
+            <input type="checkbox" class="language" name="html" value="HTML" />
+            <label for="css">CSS</label>
+            <input type="checkbox" class="language" name="css" value="CSS" />
+            <label for="JavaScript">JavaScript</label>
+            <input
             type="checkbox"
             class="language"
             name="JavaScript"
             value="JavaScript"
-          />
+            />
+            <br />
+            <br />
+            <label for="preferred-language">Preferred Language:</label>
+            <select name="preferred-language">
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="JavaScript">JavaScript</option>
+            </select>
+            <br />
+            <br />
+            <label for="file">Upload Your CV:</label>
+            <input type="file" name="file" />
+          </fieldset>
           <br />
-          <br />
-          <label for="preferred-language">Preferred Language:</label>
-          <select name="preferred-language">
-            <option value="HTML">HTML</option>
-            <option value="CSS">CSS</option>
-            <option value="JavaScript">JavaScript</option>
-          </select>
-          <br />
-          <br />
-          <label for="file">Upload Your CV:</label>
-          <input type="file" name="file" />
-        </fieldset>
-        <br />
-        <fieldset>
-          <legend><b>Feedback</b></legend>
-          Do you want an answer sent back?
-          <label for="answer-yes"></label>
-          <input type="checkbox" class="language" name="yes" value="YES" />
-          <br />
-          <br />
-          <label for="yes"
+          <fieldset>
+            <legend><b>Feedback</b></legend>
+            Do you want an answer sent back?
+            <label for="answer-yes"></label>
+            <input type="checkbox" class="language" name="yes" value="YES" />
+            <br />
+            <br />
+            <label for="yes"
             >Do you want a copy of the message from the form?</label
-          >
-          <input type="radio" name="yes" class="copy" value="yes" />Yes
-          <label for="no"></label>
-          <input type="radio" name="no" class="copy" value="no" />No
-          <br />
-          <br />
-          <label for="own-topic">Choose own topic for the message</label>
-          <input
+            >
+            <input type="radio" name="yes" class="copy" value="yes" />Yes
+            <label for="no"></label>
+            <input type="radio" name="no" class="copy" value="no" />No
+            <br />
+            <br />
+            <label for="own-topic">Choose own topic for the message</label>
+            <input
             list="topic"
             id="own-topic"
             name="own-topic"
             size="40"
             placeholder="Write your chosen topic or choose from list"
-          />
-          <datalist id="topic">
-            <option value="Feedback"></option>
-            <option value="Critics"></option>
-            <option value="Questions"></option>
-          </datalist>
-          <br />
-          <br />
-          <textarea name="chosen-topic" id="chosen-topic" rows="4" cols="60">
-Write about your chosen topic</textarea
-          >
-        </fieldset>
-        <fieldset>
-          <legend><b>Done?</b></legend>
-          <label for="submit"></label>
-          <input type="submit" name="submit" />
-        </fieldset>
-      </form>
+            />
+            <datalist id="topic">
+              <option value="Feedback"></option>
+              <option value="Critics"></option>
+              <option value="Questions"></option>
+            </datalist>
+            <br />
+            <br />
+            <textarea name="chosen-topic" id="chosen-topic" rows="4" cols="60">
+              Write about your chosen topic</textarea
+              >
+            </fieldset>
+            <fieldset>
+              <legend><b>Done?</b></legend>
+              <label for="submit"></label>
+              <input type="submit" name="submit" />
+            </fieldset>
+          </form>
+        </div>
     </main>
-
-    <footer>
-      <!-- contact information -->
-      <section>
+    <footer class="footer">
+      <address>
         <h4>Contact</h4>
-        <address>
           <p>
             Email:<a href="mailto:malin.jakob98@gmail.com"
               >Malin.jakob98@gmail.com</a
@@ -340,17 +312,9 @@ Write about your chosen topic</textarea
           </p>
           <p>Phone: <a href="tel:+123456789">123456789</a></p>
         </address>
-      </section>
-
-      <!-- navigation back to the top -->
-      <section>
         <nav>
           <a href="#top">BACK TO THE TOP</a>
         </nav>
-      </section>
-
-      <!-- copyright -->
-
       <section>
         <p>&copy; 2024 Malin Jakob AB</p>
       </section>

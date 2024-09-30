@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.5em;
+}
+
+dt{
+  display: block;
+  unicode-bidi: isolate;
+}
+
+dd {
+  display: block;
+  margin-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+h1{
+  color: #FEFAE0 ;
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+
+h2,h3,h3,h5{
+  padding-top: 20px;
+  padding-bottom:20px;
+  color: #CCD5AE;
+}
+
+p{
+  color: rgb(89, 87, 87);
+  column-count: 1;
+  column-width: 16rem;;
+  padding-top: 10px;
+  padding-bottom:10px;
+}
+
+blockquote{
+  color: rgb(59, 58, 58);
+  padding: 20px;
+}
+
+picture{
+  grid-column-start: 3;
+  padding: 20px;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  border: #D4A373 2px solid;
+  border-radius: 3%;
+}
+
+.alternative-text{
+  color: #FEFAE0;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 2em;
+}
+
+.main-header{
+  background: #CCD5AE;
+  min-height: 200px;
+  grid-column: 1/4;
+  display: grid;
+  grid-template-rows: 3fr;
+  align-items: center;
+}
+.main-header h1{
+  margin:1em;
+
+}
+
+.nav-bar{
+  background: #FEFAE0;
+}
+
+.nav-bar ul{
+  padding: 20px;
+}
+.nav-bar li{
+  list-style-type: none;
+  padding-top: 40px;
+  font-size: x-large;
+}
+
+.nav-bar li a{
+  color: #D4A373;
+  text-decoration: none;
+}
+
+
+.nav-bar li a:hover{
+  color: #CCD5AE;
+  text-decoration: none;
+}
+.learn-more{ 
+  background: #D4A373;
+  padding: 20px;
+  grid-column: 3/4;
+}
+
+.article-list li{
+  list-style-type: none;
+}
+
+.article-list li a{
+  text-decoration: none;
+  color: #E9EDC9;
+}
+
+.alternative-text a{
+  text-decoration: none;
+  color: #E9EDC9;
+}
+
+.alternative-text a:hover{
+  color: #CCD5AE;
+}
+
+.article-list li a:hover{
+  color: #CCD5AE;
+}
+
+form{
+  margin-bottom: 50px;
+}
+
+address{
+  color: #FEFAE0;
+}
+
+.footer address p a{
+  color: #FEFAE0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer address p a:hover{
+  color: #E9EDC9;
+  text-decoration: none;
+}
+
+.footer nav a{
+  color: #FEFAE0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer nav a:hover{
+  color: #E9EDC9;
+  text-decoration: none;
+}
+
+.footer{
+  background: #CCD5AE;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+}

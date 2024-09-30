@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--start of meta tags to document-->
     <meta charset="utf-8" />
     <meta name="application-name" content="Malins Webpage" />
     <meta name="author" content="Malin Jakob" />
@@ -11,90 +10,86 @@
     />
     <meta name="generator" content="Visual Studio Code" />
     <meta name="keywords" content="CSS,HTML,adventure" />
+    <link rel="stylesheet" type="text/css" href="styles/test1.css?rnd=12345" />
     <title>Home of Malin Jakob</title>
-    <!--end of meta tags to document-->
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1 id="top">The History of Malin Jakob</h1>
-      <nav>
+      <picture>
+        <source
+        srcset="Images/1-profilbild-progressive-90.jpeg"
+        type="image/jpeg"
+        />
+        <source
+        srcset="Images/1-profilbild-progressive-90.png"
+        type="image/png"
+        />
+        <source
+        srcset="Images/1-profilbild-pejrogressive-20.jpeg"
+        type="image/jpeg"
+        />
+        <img
+        src="Images/1-profilbild-progressive-90.jpeg"
+        alt="a profile picture of me standing in front of bushes with white flowers"
+        />
+      </picture>
+    </header>
+    <div class="container">
+      <nav class="nav-bar">
         <ul>
           <li><a href="home.html">HOME</a></li>
           <li><a href="history.html">HISTORY</a></li>
           <li><a href="now.html">NOW</a></li>
           <li><a href="future.html">FUTURE</a></li>
-          <!--end of navigation bar-->
         </ul>
       </nav>
-      <picture>
-        <source
-          srcset="Images/1-profilbild-progressive-90.jpeg"
-          type="image/jpeg"
-        />
-        <source
-          srcset="Images/1-profilbild-progressive-90.png"
-          type="image/png"
-        />
-        <source
-          srcset="Images/1-profilbild-pejrogressive-20.jpeg"
-          type="image/jpeg"
-        />
-        <img
-          src="Images/1-profilbild-progressive-90.jpeg"
-          alt="a profile picture of me standing in front of bushes with white flowers"
-        />
-      </picture>
-    </header>
-
-    <main>
-      <!-- main content about history page -->
-      <section>
-        <header>
-          <h2>About Me</h2>
-        </header>
-        <p>
-          Hello! My name is Malin Jakob, and I am a sporty and very active
-          26-year-old. I currently live in Gothenburg, but I’m originally from
-          Malmö in Skåne. I lived in Malmö with my parents and older sister. My
-          family but mostly school then dance then some more dance. I was
-          dancing around 35 hours per week, crazy huh? Before my adventures in
-          Gothenburg, I lived alone in Stockholm to become a professional dancer
-          at the Royal Swedish Ballet School. My training lasted for three
-          years, and I graduated with a professional dancer’s diploma in June
-          2018. On that note, I would say I am a girl with many homes!
-
-          <br />I have worked as both a figure skating coach and a dance teacher
-          since I was 10 years old, and I’ve been training myself since I was 3
-          . I have always been a highly engaged and motivated person. <br />
-          Besides my passion for training and dance, I also run a business with
-          my partner. We operate a small web agency called <b>MW Webbdesign</b>,
-          and we have created websites for, among others, the Chalmers student
-          portal for Industrial Engineering. Link to the page:
-          <a href="https://i-chalmers.se/">I-Chalmers</a>. I handle the design,
-          and my partner takes care of the system development.
-        </p>
-      </section>
-
-      <!-- video material of me dancing -->
-      <section>
-        <header>
-          <h3>A glimpse into my past</h3>
-        </header>
-        <article>
+      <main>
+        <section>
           <header>
-            <h4>Korsaren</h4>
-            <p>
-              This is me dancing the piece called Korsaren at a Christmas Show.
-              Choreographer: Ylva Rhodin.
-            </p>
+            <h2>About Me</h2>
           </header>
-          <video
+          <p>
+            Hello! My name is Malin Jakob, and I am a sporty and very active
+            26-year-old. I currently live in Gothenburg, but I’m originally from
+            Malmö in Skåne. I lived in Malmö with my parents and older sister. My
+            family but mostly school then dance then some more dance. I was
+            dancing around 35 hours per week, crazy huh? Before my adventures in
+            Gothenburg, I lived alone in Stockholm to become a professional dancer
+            at the Royal Swedish Ballet School. My training lasted for three
+            years, and I graduated with a professional dancer’s diploma in June
+            2018. On that note, I would say I am a girl with many homes!
+            
+            <br />I have worked as both a figure skating coach and a dance teacher
+            since I was 10 years old, and I’ve been training myself since I was 3
+            . I have always been a highly engaged and motivated person. <br />
+            Besides my passion for training and dance, I also run a business with
+            my partner. We operate a small web agency called <b>MW Webbdesign</b>,
+            and we have created websites for, among others, the Chalmers student
+            portal for Industrial Engineering. Link to the page:
+            <a href="https://i-chalmers.se/">I-Chalmers</a>. I handle the design,
+            and my partner takes care of the system development.
+          </p>
+        </section>
+        <section>
+          <header>
+            <h3>A glimpse into my past</h3>
+          </header>
+          <article>
+            <header>
+              <h4>Korsaren</h4>
+              <p>
+                This is me dancing the piece called Korsaren at a Christmas Show.
+                Choreographer: Ylva Rhodin.
+              </p>
+            </header>
+            <video
             width="800"
             height="500"
             poster="Images/korsare.jpg"
             controls
             preload="none"
-          >
+            >
             <source src="Videos/korsaren-jul-2013.mp4" />
           </video>
           <footer>
@@ -117,8 +112,8 @@
             </p>
             <p>
               <cite
-                >Spring Show at Royal Swedish Ballet School, Choreographer Malin
-                Jakob</cite
+              >Spring Show at Royal Swedish Ballet School, Choreographer Malin
+              Jakob</cite
               >
             </p>
           </footer>
@@ -132,8 +127,8 @@
           </p>
           <figure>
             <img
-              src="Images/OB-0transperant-150-3-noAdam.png"
-              alt="a logo with no transparency,150 colors,and no Interlacing"
+            src="Images/OB-0transperant-150-3-noAdam.png"
+            alt="a logo with no transparency,150 colors,and no Interlacing"
             />
             <figcaption>
               Image format: No transparency, 150 colors and no interlacing.
@@ -141,8 +136,8 @@
           </figure>
           <figure>
             <img
-              src="Images/OB-transperant-2-9-noAdaam.png"
-              alt="a logo with transparency,2 colors, and no Interlacing"
+            src="Images/OB-transperant-2-9-noAdaam.png"
+            alt="a logo with transparency,2 colors, and no Interlacing"
             />
             <figcaption>
               Image format: With transparency, 2 colors and no interlacing.
@@ -150,8 +145,8 @@
           </figure>
           <figure>
             <img
-              src="Images/OB-transperant-8-adam-7fi.png"
-              alt="a logo with transparency, 256 colors and with interlacing"
+            src="Images/OB-transperant-8-adam-7fi.png"
+            alt="a logo with transparency, 256 colors and with interlacing"
             />
             <figcaption>
               Image format: With transparency, 256 colors and with interlacing.
@@ -159,7 +154,7 @@
           </figure>
         </article>
       </section>
-
+      
       <section>
         <header>
           <h3>Before <abbr title="University">Uni</abbr></h3>
@@ -167,34 +162,25 @@
         <article>
           <pre>When I was looking at code before <abbr title="University">Uni</abbr> it looked like Japanese. 
             A lot of characters with no meaning, "£$2©∞§£§@]±. And text everywhere 
-          but it seemed to look out of place. Just like 
-                  this paragraph..@©≈$[∞ƒ‘ßœ©ç’≈•≈‘</pre>
-        </article>
-      </section>
+            but it seemed to look out of place. Just like 
+            this paragraph..@©≈$[∞ƒ‘ßœ©ç’≈•≈‘</pre>
+          </article>
+        </section>
+     </div>
     </main>
-
-    <footer>
-      <!-- contact information -->
-      <section>
+    <footer class="footer">
+      <address>
         <h4>Contact</h4>
-        <address>
-          <p>
-            Email:<a href="mailto:malin.jakob98@gmail.com"
-              >Malin.jakob98@gmail.com</a
-            >
-          </p>
-          <p>Phone: <a href="tel:+123456789">123456789</a></p>
-        </address>
-      </section>
-
-      <!-- navigation back to the top -->
-      <section>
-        <nav>
-          <a href="#top">BACK TO THE TOP</a>
-        </nav>
-      </section>
-
-      <!-- copyright -->
+        <p>
+          Email:<a href="mailto:malin.jakob98@gmail.com"
+          >Malin.jakob98@gmail.com</a
+          >
+        </p>
+        <p>Phone: <a href="tel:+123456789">123456789</a></p>
+      </address>
+      <nav>
+        <a href="#top">BACK TO THE TOP</a>
+      </nav>
       <section>
         <p>&copy; 2024 Malin Jakob AB</p>
       </section>

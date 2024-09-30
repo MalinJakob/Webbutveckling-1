@@ -11,13 +11,23 @@
     />
     <meta name="generator" content="Visual Studio Code" />
     <meta name="keywords" content="JavaScript,CSS,HTML,adventure" />
+    <link rel="stylesheet" type="text/css" href="styles/test1.css?rnd=12345" />
     <title>Home of Malin Jakob</title>
     <!--end of meta tags to document-->
   </head>
   <body>
-    <header>
-      <h1 id="top">The Future of Malin Jakob</h1>
-      <nav>
+    <header class="main-header">
+      <h1 class="header-other" id="top">The Future of Malin Jakob</h1>
+      <picture>
+        <source srcset="Images/1-profilbild-progressive-90.jpeg" type="image/jpeg">
+        <source srcset="Images/1-profilbild-progressive-90.png" type="image/png">
+        <source srcset="Images/1-profilbild-pejrogressive-20.jpeg" type="image/jpeg">
+        <img src="Images/1-profilbild-progressive-90.jpeg" alt="a profile picture of me standing in front of bushes with white flowers">
+      </picture>
+    </header>
+    <div class="container">
+
+      <nav class="nav-bar">
         <ul>
           <li><a href="home.html">HOME</a></li>
           <li><a href="history.html">HISTORY</a></li>
@@ -26,86 +36,70 @@
           <!--end of navigation bar-->
         </ul>
       </nav>
-      <picture>
-        <source srcset="Images/1-profilbild-progressive-90.jpeg" type="image/jpeg">
-        <source srcset="Images/1-profilbild-progressive-90.png" type="image/png">
-        <source srcset="Images/1-profilbild-pejrogressive-20.jpeg" type="image/jpeg">
-        <img src="Images/1-profilbild-progressive-90.jpeg" alt="a profile picture of me standing in front of bushes with white flowers">
-      </picture>
-    </header>
-
-    <main>
-      <section>
-        <header>
-          <h2>What is to come?</h2>
-        </header>
-        <p>
-          The plan is to learn more about programming and computers in general.
-          I plan to do this while finishing my third year at
-          <abbr title="University of Gothenburg">GU</abbr>. After this I am
-          going to apply for a master in <dfn>Interaction Design</dfn> at
-          Chalmers.
-        </p>
-        <article>
+      <main>
+        <section>
           <header>
-            <h2>Obstacles in The Future</h2>
-            <p>
-              I am going to be a woman in a man dominating profession and now,
-              beforehand, it is hard to comprehend how it will effect me. I hope
-              in a positive way so I can contribute back in the same matter, but
-              you never know. I do not really think I see it as a real obstacle
-              because I can stand my ground and know my worth, nevertheless, I
-              have never been exposed to that type of environment before so it
-              is hard to know exactly how i will act.
-            </p>
-          </header>
-        </article>
-
-        <article>
-          <header>
-            <h3>Things I Would Like To Learn More About</h3>
+            <h2>What is to come?</h2>
           </header>
           <p>
-            Before I enter the real world and start working for a company it
-            would be very good if I had more tools in my toolbox. The things
-            listed mentioned below are things I believe is smart to invest your
-            time and head in.
+            The plan is to learn more about programming and computers in general.
+            I plan to do this while finishing my third year at
+            <abbr title="University of Gothenburg">GU</abbr>. After this I am
+            going to apply for a master in <dfn>Interaction Design</dfn> at
+            Chalmers.
           </p>
-          <ul>
-            <li>JavaScript</li>
-            <li>SQL</li>
-            <li>Deep Learning</li>
-            <li>Figma</li>
-          </ul>
-        </article>
-      </section>
-    </main>
-
-    <footer>
-      <!-- contact information -->
-      <section>
-        <h4>Contact</h4>
+          <article>
+            <header>
+              <h2>Obstacles in The Future</h2>
+              <p>
+                I am going to be a woman in a man dominating profession and now,
+                beforehand, it is hard to comprehend how it will effect me. I hope
+                in a positive way so I can contribute back in the same matter, but
+                you never know. I do not really think I see it as a real obstacle
+                because I can stand my ground and know my worth, nevertheless, I
+                have never been exposed to that type of environment before so it
+                is hard to know exactly how i will act.
+              </p>
+            </header>
+          </article>
+          
+          <article>
+            <header>
+              <h3>Things I Would Like To Learn More About</h3>
+            </header>
+            <p>
+              Before I enter the real world and start working for a company it
+              would be very good if I had more tools in my toolbox. The things
+              listed mentioned below are things I believe is smart to invest your
+              time and head in.
+            </p>
+            <ul>
+              <li>JavaScript</li>
+              <li>SQL</li>
+              <li>Deep Learning</li>
+              <li>Figma</li>
+            </ul>
+          </article>
+        </section>
+       </div>
+      </main>
+      
+      <footer class="footer">
         <address>
-          <p>
+          <h4>Contact</h4>
+            <p>
             Email:<a href="mailto:malin.jakob98@gmail.com"
               >Malin.jakob98@gmail.com</a
             >
           </p>
           <p>Phone: <a href="tel:+123456789">123456789</a></p>
         </address>
-      </section>
-
-      <!-- navigation back to the top -->
-      <section>
         <nav>
           <a href="#top">BACK TO THE TOP</a>
         </nav>
-      </section>
-
-      <!-- copyright -->
-      <section>
+        <section>
         <p>&copy; 2024 Malin Jakob AB</p>
-      </section>
-    </footer>
+        </section>
+      </footer>
   </body>
 </html>
