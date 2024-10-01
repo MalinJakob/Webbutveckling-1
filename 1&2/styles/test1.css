@@ -11,6 +11,10 @@ body{
   grid-template-columns: 1fr 3fr 1fr;
 }
 
+main{
+  padding:30px;
+}
+
 dt{
   display: block;
   unicode-bidi: isolate;
@@ -51,6 +55,7 @@ picture{
   grid-column-start: 3;
   padding: 20px;
 }
+
 img{
   max-width: 100%;
   height: auto;
@@ -62,7 +67,6 @@ img{
   color: #FEFAE0;
 }
 
-
 .main-header{
   background: #CCD5AE;
   min-height: 200px;
@@ -73,7 +77,6 @@ img{
 }
 .main-header h1{
   margin:1em;
-
 }
 
 .nav-bar{
