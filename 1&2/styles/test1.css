@@ -7,6 +7,8 @@ body{
   max-width: 1200px;
   margin: auto;
   padding: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
 }
 
 dt{
@@ -60,11 +62,6 @@ img{
   color: #FEFAE0;
 }
 
-.container{
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  gap: 2em;
-}
 
 .main-header{
   background: #CCD5AE;
@@ -97,15 +94,15 @@ img{
   text-decoration: none;
 }
 
-
 .nav-bar li a:hover{
   color: #CCD5AE;
   text-decoration: none;
 }
-.learn-more{ 
+
+aside{ 
   background: #D4A373;
   padding: 20px;
-  grid-column: 3/4;
+  grid-column-start: 3;
 }
 
 .article-list li{
@@ -132,6 +129,7 @@ img{
 
 form{
   margin-bottom: 50px;
+  padding: 20px;
 }
 
 address{
@@ -161,10 +159,7 @@ address{
 }
 
 .footer{
-  background: #CCD5AE;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  display: grid;
-  justify-content: center;
+  background: #D4A373;
   padding: 20px;
+  grid-column:1/4
 }
