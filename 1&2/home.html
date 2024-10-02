@@ -103,221 +103,218 @@
           </p>
         </article>
       </section>
-    </section>
-    <section>
-      <header>
-        <h2>How About You?</h2>
-        <p>
-          Do you want to start learning HTML and do this journey with me?
-          Answer this form and maybe we can do this together.
-        </p>
-      </header>
-      <form
-      action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php"
-      method="post"
-      enctype="multipart/form-data"
-      >
-      <fieldset>
-        <legend><b>Your Details</b></legend>
-        <label for="name">Name:</label>
-        <input
-        type="text"
-        id="name"
-        name="name"
-        size="30"
-        maxlength="100"
-        placeholder="John Doe"
-        autofocus
-        required
-        />
-        <br />
-        <br />
-        <label for="email">Email:</label>
-        <input
-        type="email"
-        id="email"
-        name="email"
-        size="30"
-        maxlength="100"
-        placeholder="JohnDoe@gmail.com"
-        required
-        />
-        <br />
-        <br />
-        <label for="phone">Phone:</label>
-        <input
-        type="text"
-        id="phone"
-        name="phone"
-        size="30"
-        pattern="[+]46)\s*(7[0236])\s*(\d{4})\s*(\d{3})$"
-        title="The phone number need to be in the format +46712 345 678"
-        required
-        placeholder="+46 712 345 678"
-        />
-        <br />
-        <br />
-        <label for="city">Home Town:</label>
-        <input
-        list="city"
-        id="my-city"
-        name="my-city"
-        size="40"
-        placeholder="Write your city or choose from list"
-        required
-        />
-        <datalist id="city">
-          <option value="Gothenburg"></option>
-          <option value="Malmö"></option>
-          <option value="Stockholm"></option>
-        </datalist>
-        <br />
-        <br />
-        <label for="website">Website:</label>
-        <input
-        type="url"
-        id="website"
-        name="website"
-        size="30"
-        maxlength="100"
-        placeholder="www.johndoe.com"
-        required
-        />
-      </fieldset>
-      <br />
-      <fieldset>
-        <legend><b>Demographics</b></legend>
-        <label for="about-yourself"></label>
-        <textarea name="about-yourself" rows="4" cols="60">
+      <section>
+        <header>
+          <h2>How About You?</h2>
+          <p>
+            Do you want to start learning HTML and do this journey with me?
+            Answer this form and maybe we can do this together.
+          </p>
+        </header>
+        <form
+          action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <fieldset>
+            <legend><b>Your Details</b></legend>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              size="30"
+              maxlength="100"
+              placeholder="John Doe"
+              autofocus
+              required
+            />
+            <br />
+            <br />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              size="30"
+              maxlength="100"
+              placeholder="JohnDoe@gmail.com"
+              required
+            />
+            <br />
+            <br />
+            <label for="phone">Phone:</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              size="30"
+              pattern="[+]46)\s*(7[0236])\s*(\d{4})\s*(\d{3})$"
+              title="The phone number need to be in the format +46712 345 678"
+              required
+              placeholder="+46 712 345 678"
+            />
+            <br />
+            <br />
+            <label for="city">Home Town:</label>
+            <input
+              list="city"
+              id="my-city"
+              name="my-city"
+              size="40"
+              placeholder="Write your city or choose from list"
+              required
+            />
+            <datalist id="city">
+              <option value="Gothenburg"></option>
+              <option value="Malmö"></option>
+              <option value="Stockholm"></option>
+            </datalist>
+            <br />
+            <br />
+            <label for="website">Website:</label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              size="30"
+              maxlength="100"
+              placeholder="www.johndoe.com"
+              required
+            />
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend><b>Demographics</b></legend>
+            <label for="about-yourself"></label>
+            <textarea name="about-yourself" rows="4" cols="60">
               Write about yourself</textarea
-              >
-              <br />
-              <br />
-              <label for="woman">Gender:</label>
-              <input
+            >
+            <br />
+            <br />
+            <label for="woman">Gender:</label>
+            <input
               type="radio"
               class="gender"
               name="woman"
               value="woman"
-              />Woman
-              <label for="man"></label>
-              <input type="radio" class="gender" name="man" value="man" />Man
-              <label for="other"></label>
-              <input
+            />Woman
+            <label for="man"></label>
+            <input type="radio" class="gender" name="man" value="man" />Man
+            <label for="other"></label>
+            <input
               type="radio"
               class="gender"
               name="other"
               value="other"
-              />Other
-            </fieldset>
+            />Other
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend><b>Former Knowledge</b></legend>
+            Box the languages you are familiar with:
             <br />
-            <fieldset>
-              <legend><b>Former Knowledge</b></legend>
-              Box the languages you are familiar with:
-              <br />
-              <label for="html">HTML</label>
-              <input type="checkbox" class="language" name="html" value="HTML" />
-              <label for="css">CSS</label>
-              <input type="checkbox" class="language" name="css" value="CSS" />
-              <label for="JavaScript">JavaScript</label>
-              <input
+            <label for="html">HTML</label>
+            <input type="checkbox" class="language" name="html" value="HTML" />
+            <label for="css">CSS</label>
+            <input type="checkbox" class="language" name="css" value="CSS" />
+            <label for="JavaScript">JavaScript</label>
+            <input
               type="checkbox"
               class="language"
               name="JavaScript"
               value="JavaScript"
-              />
-              <br />
-              <br />
-              <label for="preferred-language">Preferred Language:</label>
-              <select name="preferred-language">
-                <option value="HTML">HTML</option>
-                <option value="CSS">CSS</option>
-                <option value="JavaScript">JavaScript</option>
-              </select>
-              <br />
-              <br />
-              <label for="file">Upload Your CV:</label>
-              <input type="file" name="file" />
-            </fieldset>
+            />
             <br />
-            <fieldset>
-              <legend><b>Feedback</b></legend>
-              Do you want an answer sent back?
-              <label for="answer-yes"></label>
-              <input type="checkbox" class="language" name="yes" value="YES" />
-              <br />
-              <br />
-              <label for="yes"
+            <br />
+            <label for="preferred-language">Preferred Language:</label>
+            <select name="preferred-language">
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="JavaScript">JavaScript</option>
+            </select>
+            <br />
+            <br />
+            <label for="file">Upload Your CV:</label>
+            <input type="file" name="file" />
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend><b>Feedback</b></legend>
+            Do you want an answer sent back?
+            <label for="answer-yes"></label>
+            <input type="checkbox" class="language" name="yes" value="YES" />
+            <br />
+            <br />
+            <label for="yes"
               >Do you want a copy of the message from the form?</label
-              >
-              <input type="radio" name="yes" class="copy" value="yes" />Yes
-              <label for="no"></label>
-              <input type="radio" name="no" class="copy" value="no" />No
-              <br />
-              <br />
-              <label for="own-topic">Choose own topic for the message</label>
-              <input
+            >
+            <input type="radio" name="yes" class="copy" value="yes" />Yes
+            <label for="no"></label>
+            <input type="radio" name="no" class="copy" value="no" />No
+            <br />
+            <br />
+            <label for="own-topic">Choose own topic for the message</label>
+            <input
               list="topic"
               id="own-topic"
               name="own-topic"
               size="40"
               placeholder="Write your chosen topic or choose from list"
-              />
-              <datalist id="topic">
-                <option value="Feedback"></option>
-                <option value="Critics"></option>
-                <option value="Questions"></option>
-              </datalist>
-              <br />
-              <br />
-              <textarea name="chosen-topic" id="chosen-topic" rows="4" cols="60">
+            />
+            <datalist id="topic">
+              <option value="Feedback"></option>
+              <option value="Critics"></option>
+              <option value="Questions"></option>
+            </datalist>
+            <br />
+            <br />
+            <textarea name="chosen-topic" id="chosen-topic" rows="4" cols="60">
                 Write about your chosen topic</textarea
-                >
-              </fieldset>
-              <fieldset>
-                <legend><b>Done?</b></legend>
-                <label for="submit"></label>
-                <input type="submit" name="submit" />
-              </fieldset>
-            </form>
-          </section>
-        </main>
-        <aside>
-          <header>
-            <h3>Learn More</h3>
-          </header>
-          <p class="alternative-text">
-            If you never heard of Cognitive Science, you are not alone. It is a
-            science focusing on the brain, the mind and the representations of
-            knowledge. It contains a lot of other disciplines, like psychology,
-            philosophy, computer science and some few more. <br />
-            Here is a link to a great definition by the John Hopkins
-            institution. <br>
-            <a href="https://cogsci.jhu.edu/about/" target="_blank"
-              >Click here
-            </a>
-          </p>
-          <h3>Read More Here</h3>
-          <ul class="article-list">
-            <li>
-              <a
-                href="https://hms.harvard.edu/news-events/publications-archive/brain/dancing-brain"
-                target="_blank"
-                >Dance & the Brain</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://uxmag.com/articles/how-cognitive-science-and-artificial-intelligence-are-intertwined"
-                target="_blank"
-                >Cognitive Science and AI</a
-              >
-            </li>
-          </ul>
-        </aside>
-        <footer class="footer">
-          <address>
-            <h4>Contact</h4>
+            >
+          </fieldset>
+          <fieldset>
+            <legend><b>Done?</b></legend>
+            <label for="submit"></label>
+            <input type="submit" name="submit" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <aside>
+      <header>
+        <h3>Learn More</h3>
+      </header>
+      <p class="alternative-text">
+        If you never heard of Cognitive Science, you are not alone. It is a
+        science focusing on the brain, the mind and the representations of
+        knowledge. It contains a lot of other disciplines, like psychology,
+        philosophy, computer science and some few more. <br />
+        Here is a link to a great definition by the John Hopkins institution.
+        <br />
+        <a href="https://cogsci.jhu.edu/about/" target="_blank">Click here </a>
+      </p>
+      <h3>Read More Here</h3>
+      <ul class="article-list">
+        <li>
+          <a
+            href="https://hms.harvard.edu/news-events/publications-archive/brain/dancing-brain"
+            target="_blank"
+            >Dance & the Brain</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://uxmag.com/articles/how-cognitive-science-and-artificial-intelligence-are-intertwined"
+            target="_blank"
+            >Cognitive Science and AI</a
+          >
+        </li>
+      </ul>
+    </aside>
+    <footer class="footer">
+      <address>
+        <h3 class="footer-header">Contact</h3>
         <p>
           Email:<a href="mailto:malin.jakob98@gmail.com"
             >Malin.jakob98@gmail.com</a
