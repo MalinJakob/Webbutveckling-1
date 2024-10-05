@@ -13,10 +13,6 @@ body{
   gap: 0.5em;
 }
 
-main{
-  padding:10px;
-}
-
 dt{
   display: block;
   unicode-bidi: isolate;
@@ -30,14 +26,15 @@ dd {
 
 h1{
   color: #FEFAE0 ;
-  padding-top: 20px;
-  padding-bottom:20px;
+  font-size: 26px;
+  margin:1em;
 }
 
 h2,h3,h4,h5{
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom:10px;
   color: #CCD5AE;
+  font-size: 22px ;
 }
 
 p{
@@ -46,11 +43,13 @@ p{
   padding-bottom: 3px;
   line-height: 1.5em;
   column-count: 1;
+  font-size: 16px;
 }
 
 blockquote{
   color: rgb(59, 58, 58);
   padding: 10px;
+  font-size: 16px;
 }
 
 .pre-outside-body{
@@ -91,18 +90,17 @@ video{
   grid-template-rows: 3fr;
   align-items: center;
 }
-.main-header h1{
-  margin:1.5em;
-}
 
 .nav-bar{
   background: #FEFAE0;
+  padding: 10px;
 }
 
 .nav-bar li{
   list-style-type: none;
-  padding-top: 10px;
-  font-size: x-large;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
 }
 
 .nav-bar li a{
@@ -145,10 +143,6 @@ aside{
   color: #CCD5AE;
 }
 
-form{
-  margin-bottom: 50px;
-  padding: 20px;
-}
 
 address{
   color: #FEFAE0;
@@ -214,10 +208,39 @@ aside ol li{
   box-shadow: 1px 1px 2px #E9EDC9;
 }
 
+form{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  border: #CCD5AE dashed 3px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+fieldset{
+  border: none;
+}
+
+fieldset>legend{
+  margin-bottom: 15px;
+  color: #D4A373;
+}
+
+form input, form textarea{
+  padding: 6px 8px;
+  border:solid 1px #D4A373;
+  max-width: 60vw;;
+  text-align: start;
+}
+
+textarea{
+  color: #D4A373;
+}
 
 
 /* Medium devices */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 780px) {
   body{
     margin: auto;
     padding: 0.5em;
@@ -236,6 +259,20 @@ aside ol li{
     padding-top: 10px;
     padding-bottom:5px;
     line-height: 1.5em;
+    font-size: 18px;
+  }
+
+  h1{
+    color: #FEFAE0 ;
+    font-size: 28px;
+    margin:1.2em;
+  }
+
+  h2,h3,h4,h5{
+    padding-top: 20px;
+    padding-bottom:10px;
+    color: #CCD5AE;
+    font-size: 24px ;
   }
 
   .pre-outside-body{
@@ -245,6 +282,13 @@ aside ol li{
     padding: 20px;
     box-shadow:2px 2px 10px #E9EDC9;
   }
+
+
+blockquote{
+  color: rgb(59, 58, 58);
+  padding: 10px;
+  font-size: 18px;
+}
   
   picture{
     grid-column-start: 3;
@@ -276,9 +320,6 @@ aside ol li{
     grid-template-rows: 3fr;
     align-items: center;
   }
-  .main-header h1{
-    margin:0.5em;
-  }
   
   .nav-bar{
     background: #FEFAE0;
@@ -290,12 +331,13 @@ aside ol li{
   .nav-bar li{
     list-style-type: none;
     padding-top: 20px;
-    font-size: x-large;
+    font-size: 20px;
   }
   
   .nav-bar li a{
     color: #D4A373;
     text-decoration: none;
+    font-size: 22px;
   }
   
   .nav-bar li a:hover{
@@ -310,6 +352,10 @@ aside ol li{
     grid-column-end: 3;
   }
   
+  aside p{
+    font-size: 16px;
+  }
+  
   .article-list li{
     list-style-type: none;
     padding: 8px;
@@ -318,6 +364,7 @@ aside ol li{
   .article-list li a{
     text-decoration: none;
     color: #E9EDC9;
+    font-size: 16px;
   }
   
   .alternative-text a{
@@ -437,12 +484,14 @@ aside ol li{
     color: #FEFAE0 ;
     padding-top: 20px;
     padding-bottom:20px;
+    font-size: 32px;
   }
   
   h2,h3,h4,h5{
     padding-top: 20px;
     padding-bottom:20px;
     color: #CCD5AE;
+    font-size: 28px;
   }
   
   p{
@@ -452,11 +501,13 @@ aside ol li{
     padding-top: 10px;
     padding-bottom:10px;
     line-height: 1.5em;
+    font-size: 20px;
   }
   
   blockquote{
     color: rgb(59, 58, 58);
     padding: 20px;
+    font-size: 20px;
   }
   
   .pre-outside-body{
@@ -613,9 +664,7 @@ aside ol li{
   aside ol{
     padding: 10px;
   }
-  
-  
-  
+ 
   aside ol li{
     color: #FEFAE0;
     margin-top: 10px;

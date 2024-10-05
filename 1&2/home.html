@@ -156,16 +156,16 @@
             />
             <br />
             <br />
-            <label for="city">Home Town:</label>
+            <label for="my-city">Home Town:</label>
             <input
-              list="city"
+              list="cities"
               id="my-city"
               name="my-city"
               size="40"
               placeholder="Write your city or choose from list"
               required
             />
-            <datalist id="city">
+            <datalist id="cities">
               <option value="Gothenburg"></option>
               <option value="Malmö"></option>
               <option value="Stockholm"></option>
@@ -187,25 +187,26 @@
           <fieldset>
             <legend><b>Demographics</b></legend>
             <label for="about-yourself"></label>
-            <textarea name="about-yourself" rows="4" cols="60">
+            <textarea id="about-yourself" name="about-yourself" rows="4" cols="60">
               Write about yourself</textarea
             >
             <br />
             <br />
             <label for="woman">Gender:</label>
             <input
+              id="woman"
               type="radio"
               class="gender"
-              name="woman"
+              name="gender-selection"
               value="woman"
             />Woman
             <label for="man"></label>
-            <input type="radio" class="gender" name="man" value="man" />Man
+            <input type="radio" class="gender" name="gender-selection" value="man" />Man
             <label for="other"></label>
             <input
               type="radio"
               class="gender"
-              name="other"
+              name="gender-selection"
               value="other"
             />Other
           </fieldset>
@@ -215,20 +216,21 @@
             Box the languages you are familiar with:
             <br />
             <label for="html">HTML</label>
-            <input type="checkbox" class="language" name="html" value="HTML" />
+            <input type="checkbox" class="language" id="html" name="html" value="HTML" />
             <label for="css">CSS</label>
-            <input type="checkbox" class="language" name="css" value="CSS" />
+            <input type="checkbox" class="language" id="css" name="css" value="CSS" />
             <label for="JavaScript">JavaScript</label>
             <input
               type="checkbox"
               class="language"
+              id="JavaScript"
               name="JavaScript"
               value="JavaScript"
             />
             <br />
             <br />
             <label for="preferred-language">Preferred Language:</label>
-            <select name="preferred-language">
+            <select id="preferred-language" name="preferred-language">
               <option value="HTML">HTML</option>
               <option value="CSS">CSS</option>
               <option value="JavaScript">JavaScript</option>
@@ -236,23 +238,23 @@
             <br />
             <br />
             <label for="file">Upload Your CV:</label>
-            <input type="file" name="file" />
+            <input id="file" type="file" name="file" />
           </fieldset>
           <br />
           <fieldset>
             <legend><b>Feedback</b></legend>
             Do you want an answer sent back?
             <label for="answer-yes"></label>
-            <input type="checkbox" class="language" name="yes" value="YES" />
+            <input type="checkbox" id="answer-yes" name="answer-yes" value="YES" />
             <br />
             <br />
-            <label for="yes"
+            <label for="copy-yes"
               >Do you want a copy of the message from the form?</label
             >
-            <input type="radio" name="yes" class="copy" value="yes" />Yes
-            <label for="no"></label>
-            <input type="radio" name="no" class="copy" value="no" />No
-            <br />
+            <input type="radio" id="copy-yes" name="yes" class="copy" value="yes" />Yes
+            <label for="copy-no"></label>
+            <input type="radio" id="copy-no" name="no" class="copy" value="no" />No
+            <br /> 
             <br />
             <label for="own-topic">Choose own topic for the message</label>
             <input
@@ -262,13 +264,14 @@
               size="40"
               placeholder="Write your chosen topic or choose from list"
             />
-            <datalist id="topic">
+            <datalist id="topics">
               <option value="Feedback"></option>
               <option value="Critics"></option>
               <option value="Questions"></option>
             </datalist>
             <br />
             <br />
+            <label for="chosen-topic"></label>
             <textarea name="chosen-topic" id="chosen-topic" rows="4" cols="60">
                 Write about your chosen topic</textarea
             >
@@ -276,7 +279,7 @@
           <fieldset>
             <legend><b>Done?</b></legend>
             <label for="submit"></label>
-            <input type="submit" name="submit" />
+            <input type="submit" id="submit" name="submit" />
           </fieldset>
         </form>
       </section>
