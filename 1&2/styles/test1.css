@@ -31,6 +31,7 @@ dd {
   display: block;
   margin-inline-start: 1em;
   unicode-bidi: isolate;
+  color: darkolivegreen;
 }
 
 h1{
@@ -75,7 +76,6 @@ blockquote{
   max-width: 100vw;
 }
 
-
 picture{
   grid-column-start: 3;
   padding: 1em;
@@ -92,12 +92,50 @@ img{
   margin-bottom: 1em;
 }
 
+.photo-gallery{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  border: #CCD5AE dashed 2px;
+  background: #E9EDC9;
+  margin-bottom: 1em;
+}
+
+.photo-gallery figcaption{
+  width: 16em;
+  margin-bottom: 0.5em;
+  color: darkolivegreen
+}
+
+.photo-gallery img{
+  border: #FEFAE0 3px solid;
+}
 
 video{
   max-width: 80%;
   height: auto;
   padding: 0.5em;
 }
+
+table{
+  table-layout: auto;
+  width: 100%;
+ }
+
+ caption{
+   font-size: 120%;
+   margin-top: 1em;
+   margin-bottom: 0.5em;
+ }
+
+ th{
+   font-size: 100%;
+ } 
+
+ td{
+   font-size: 100%;
+   text-align: center;
+ }
 
 .alternative-text{
   color: #FEFAE0;
@@ -169,6 +207,7 @@ aside{
   margin-top: 0.25em;
   font-size: 100%;
 }
+
 
 address{
   color: #FEFAE0;
@@ -322,9 +361,31 @@ blockquote{
     padding: 1em;
   }
 
-  figcaption{
+  .photo-gallery{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap:2em;
+    border: #CCD5AE dashed 2px;
+    background: #E9EDC9;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  
+  .photo-gallery figcaption{
+    width: 16em;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    margin-left: 1em;
+    color: darkolivegreen;
     font-size: 120%;
   }
+  
+  .photo-gallery img{
+    border: #FEFAE0 3px solid;
+    margin-left: 2em;
+  }
+
   
   img{
     max-width: 100%;
@@ -338,6 +399,26 @@ blockquote{
     height: auto;
     padding: 1em;
   }
+
+  table{
+    table-layout: auto;
+    width: 100%;
+   }
+ 
+   caption{
+     font-size: 130%;
+     margin-top: 1em;
+     margin-bottom: 0.5em;
+   }
+ 
+   th{
+     font-size: 120%;
+   } 
+ 
+   td{
+     font-size: 140%;
+     text-align: center;
+   }
   
   .alternative-text{
     color: #FEFAE0;
@@ -562,10 +643,31 @@ blockquote{
     padding: 1em;
   }
 
-  figcaption{
-    font-size: 140%;
+  f.photo-gallery{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap:2em;
+    border: #CCD5AE dashed 2px;
+    background: #E9EDC9;
+    margin-bottom: 1em;
+    margin-top: 1em;
   }
   
+  .photo-gallery figcaption{
+    width: 16em;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    margin-left: 1em;
+    color: darkolivegreen;
+    font-size: 120%;
+  }
+  
+  .photo-gallery img{
+    border: #FEFAE0 3px solid;
+    margin-left: 2em;
+  }
+
   img{
     max-width: 100%;
     height: auto;
@@ -578,6 +680,28 @@ blockquote{
     height: auto;
     padding: 1em;
   }
+
+
+  table{
+   table-layout: auto;
+   width: 100%;
+  }
+
+  caption{
+    font-size: 150%;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  th{
+    font-size: 140%;
+  } 
+
+  td{
+    font-size: 140%;
+    text-align: center;
+  }
+
   
   .alternative-text{
     color: #FEFAE0;
