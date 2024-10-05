@@ -27,6 +27,7 @@ a:link{
 
 a:hover{
   color: #CCD5AE;
+  transition: ease-in;
 }
 
 a:active{
@@ -114,6 +115,7 @@ video{
 
 table{
   table-layout: auto;
+  border-spacing: 0.3em;
   width: 100%;
 }
 
@@ -209,10 +211,12 @@ aside{
 .nav-li a:link{
   color: #CCD5AE;
 }
+
 .nav-bar li a:hover{
   color: #CCD5AE;
   text-decoration: none;
   cursor: pointer;
+  transition: ease 0.5s;
 }
 
 .nav-bar li a:active{
@@ -225,7 +229,6 @@ aside{
   text-underline-offset: 0.3em;
   color: #D4A373;
 }
-
 
 /* article & learning list styling*/
 .article-list li{
@@ -245,6 +248,7 @@ aside{
 
 .article-list li a:hover{
   color: #CCD5AE;
+  transition: ease 0.5s;
 }
 
 .article-list li a:active{
@@ -269,6 +273,7 @@ aside{
 
 .alternative-text a:hover{
   color: #CCD5AE;
+  transition: ease 0.5s;
 }
 
 .alternative-text a:active{
@@ -311,6 +316,7 @@ address{
 .footer address a:hover{
   color: #E9EDC9;
   text-decoration: none;
+  transition: ease 0.5s;
 }
 
 .footer address a:active{
@@ -386,8 +392,25 @@ form input, form textarea{
   text-align: start;
 }
 
+form input:focus{
+  background: #E9EDC9;
+}
+
+#phone{
+  background-image: url(/Webbutveckling-1/1&2/Images/icons8-phone-30.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#email{
+  background-image: url(/Webbutveckling-1/1&2/Images/icons8-email-30.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
 textarea{
   color: #D4A373;
+  resize: none;
 }
 
 
