@@ -1,81 +1,102 @@
-/*mobile 480 px*/
-
+/*mobile 200-780 px*/
 *{
   margin: 0;
   padding: 0;
 }
 
 body{
+  min-width: 100px;
   margin: auto;
-  padding: 0.5em;
+  padding: 1em;
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.5em;
+  overflow: scroll;
+}
+
+dl{
+  border: 2px  dashed #CCD5AE;
+  padding: 0.5em;
+  background: #E9EDC9;
 }
 
 dt{
+  margin-top: 1em;
   display: block;
   unicode-bidi: isolate;
+  color: #D4A373;
 }
 
 dd {
   display: block;
-  margin-inline-start: 40px;
+  margin-inline-start: 1em;
   unicode-bidi: isolate;
 }
 
 h1{
   color: #FEFAE0 ;
-  font-size: 26px;
+  font-size: 150%;
   margin:1em;
 }
 
 h2,h3,h4,h5{
-  padding-top: 20px;
-  padding-bottom:10px;
+  padding-top: 1em;
+  padding-bottom:0.5em;
   color: #CCD5AE;
-  font-size: 22px ;
+  font-size: 130%;
 }
 
 p{
   color: rgb(89, 87, 87);
-  padding-top: 5px;
-  padding-bottom: 3px;
+  padding-top: 0.25em;
+  padding-bottom: 0.1em;
   line-height: 1.5em;
   column-count: 1;
-  font-size: 16px;
+  font-size: 100%;
 }
 
 blockquote{
   color: rgb(59, 58, 58);
-  padding: 10px;
-  font-size: 16px;
+  padding: 0.5em;
+  font-size: 100%;
+}
+
+.pre-inside-body{
+  max-width: 60vw;
+  overflow: scroll;
 }
 
 .pre-outside-body{
   color: #FEFAE0;
   background:#CCD5AE;
-  border:2px dashed #E9EDC9;
-  padding: 20px;
-  box-shadow:2px 2px 10px #E9EDC9;
+  border:3px dashed #E9EDC9;
+  padding: 1em;
+  box-shadow:3px 3px 5px #E9EDC9;
+  max-width: 100vw;
 }
+
 
 picture{
   grid-column-start: 3;
-  padding: 20px;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 img{
   max-width: 100%;
   height: auto;
-  border: #D4A373 2px solid;
+  border: #E9EDC9 2px solid;
   border-radius: 3%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
+
 video{
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
-  padding: 20px;
+  padding: 0.5em;
 }
 
 .alternative-text{
@@ -84,7 +105,7 @@ video{
 
 .main-header{
   background: #CCD5AE;
-  min-height: 200px;
+  min-height: 12em;
   grid-column: 1/2;
   display: grid;
   grid-template-rows: 3fr;
@@ -93,19 +114,19 @@ video{
 
 .nav-bar{
   background: #FEFAE0;
-  padding: 10px;
+  padding: 0.5em;
 }
 
 .nav-bar li{
   list-style-type: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 16px;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
 }
 
 .nav-bar li a{
   color: #D4A373;
   text-decoration: none;
+  font-size: 100%;
 }
 
 .nav-bar li a:hover{
@@ -115,14 +136,14 @@ video{
 
 aside{ 
   background: #D4A373;
-  padding: 10px;
+  padding: 0.5em;
   grid-column-start: 1;
   grid-column-end: 2;
 }
 
 .article-list li{
   list-style-type: none;
-  padding: 8px;
+  padding: 0.4em;
 }
 
 .article-list li a{
@@ -143,6 +164,11 @@ aside{
   color: #CCD5AE;
 }
 
+.learning-list li{
+  margin-left: 1em;
+  margin-top: 0.25em;
+  font-size: 100%;
+}
 
 address{
   color: #FEFAE0;
@@ -172,7 +198,7 @@ address{
 
 .footer{
   background: #CCD5AE;
-  padding: 20px;
+  padding: 1em;
   grid-column:1/2;
   display: grid;
   align-items: flex-start;
@@ -184,38 +210,39 @@ address{
 
 details{
   color: #FEFAE0;
-  padding: 10px;
+  padding: 0.5em;
 }
 
 details ol li{
-  margin-top: 15px;
+  margin-top: 0.7em;
 }
 
 .p-outside-body{
   color: #FEFAE0;
-  padding: 5px;
+  padding: 0.25em;
 }
 
 aside ol{
-  padding: 10px;
+  padding: 0.5em;
 }
 
 aside ol li{
   color: #FEFAE0;
-  margin-top: 10px;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
   background: #CCD5AE;
-  padding: 10px;
+  padding: 0.5em;
   box-shadow: 1px 1px 2px #E9EDC9;
 }
 
 form{
   display: grid;
   grid-template-columns: 1fr;
-  gap: 6px;
+  gap: 0.30em;
   border: #CCD5AE dashed 3px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 20px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
 }
 
 fieldset{
@@ -223,13 +250,13 @@ fieldset{
 }
 
 fieldset>legend{
-  margin-bottom: 15px;
+  margin-bottom: 0.7em;
   color: #D4A373;
 }
 
 form input, form textarea{
-  padding: 6px 8px;
-  border:solid 1px #D4A373;
+  padding: 0.3em 0.5em;
+  border:solid 1.5px #D4A373;
   max-width: 60vw;;
   text-align: start;
 }
@@ -249,63 +276,67 @@ textarea{
     gap: 0.5em;
   }
   main{
-    padding:15px;
+    padding:0.7em;
   }
   
   p{
     color: rgb(89, 87, 87);
     column-count: 2;
     column-width: 8rem;;
-    padding-top: 10px;
-    padding-bottom:5px;
+    padding-top: 0.5em;
+    padding-bottom:0.25em;
     line-height: 1.5em;
-    font-size: 18px;
+    font-size: 120%;
   }
 
   h1{
     color: #FEFAE0 ;
-    font-size: 28px;
+    font-size: 180%;
     margin:1.2em;
   }
 
   h2,h3,h4,h5{
-    padding-top: 20px;
-    padding-bottom:10px;
+    padding-top: 1em;
+    padding-bottom:1em;
     color: #CCD5AE;
-    font-size: 24px ;
+    font-size: 160%;
   }
 
   .pre-outside-body{
     color: #FEFAE0;
     background:#CCD5AE;
     border:2px dashed #E9EDC9;
-    padding: 20px;
-    box-shadow:2px 2px 10px #E9EDC9;
+    padding: 1em;
+    box-shadow:0.15em 0.15em 0.5em #E9EDC9;
   }
 
 
 blockquote{
   color: rgb(59, 58, 58);
-  padding: 10px;
-  font-size: 18px;
+  padding: 0.5em;
+  font-size: 120%;
 }
   
   picture{
     grid-column-start: 3;
-    padding: 20px;
+    padding: 1em;
+  }
+
+  figcaption{
+    font-size: 120%;
   }
   
   img{
     max-width: 100%;
     height: auto;
-    border: #D4A373 2px solid;
+    border: #E9EDC9 2px solid;
     border-radius: 3%;
   }
   
   video{
     max-width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 1em;
   }
   
   .alternative-text{
@@ -326,18 +357,17 @@ blockquote{
   }
   
   .nav-bar ul{
-    padding: 10px;
+    padding: 0.5em;
   }
   .nav-bar li{
     list-style-type: none;
-    padding-top: 20px;
-    font-size: 20px;
+    padding-top: 1em;
   }
   
   .nav-bar li a{
     color: #D4A373;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 120%;
   }
   
   .nav-bar li a:hover{
@@ -347,25 +377,32 @@ blockquote{
 
   aside{ 
     background: #D4A373;
-    padding: 20px;
+    padding: 1em;
     grid-column-start: 1;
     grid-column-end: 3;
   }
   
   aside p{
-    font-size: 16px;
+    font-size: 1em;
   }
   
   .article-list li{
     list-style-type: none;
-    padding: 8px;
+    padding: 0.4em;
   }
   
   .article-list li a{
     text-decoration: none;
     color: #E9EDC9;
-    font-size: 16px;
+    font-size: 120%;
   }
+
+  .learning-list li{
+    margin-left: 1em;
+    margin-top: 0.25em;
+    font-size: 120%;
+  }
+  
   
   .alternative-text a{
     text-decoration: none;
@@ -381,8 +418,8 @@ blockquote{
   }
   
   form{
-    margin-bottom: 50px;
-    padding: 20px;
+    margin-bottom: 1em;
+    padding: 1em;
   }
   
   address{
@@ -413,7 +450,7 @@ blockquote{
   
   .footer{
     background: #CCD5AE;
-    padding: 20px;
+    padding: 1em;
     grid-column:1/3;
     display: grid;
     align-items: flex-start;
@@ -425,28 +462,28 @@ blockquote{
   
   details{
     color: #FEFAE0;
-    padding: 10px;
+    padding: 0.5em;
   }
   
   details ol li{
-    margin-top: 15px;
+    margin-top: 0.8em;
   }
   
   .p-outside-body{
     color: #FEFAE0;
-    padding: 5px;
+    padding: 0.25em;
   }
   
   aside ol{
-    padding: 10px;
+    padding: 0.5em;
   }
   
   aside ol li{
     color: #FEFAE0;
-    margin-top: 10px;
+    margin-top: 0.5em;
     background: #CCD5AE;
-    padding: 10px;
-    box-shadow: 1px 1px 2px #E9EDC9;
+    padding: 0.5em;
+    box-shadow: 0.1em 0.1em 0.15em #E9EDC9;
   }
 
   
@@ -466,7 +503,7 @@ blockquote{
   }
   
   main{
-    padding:30px;
+    padding:1.5em;
   }
   
   dt{
@@ -476,64 +513,70 @@ blockquote{
   
   dd {
     display: block;
-    margin-inline-start: 40px;
+    margin-inline-start: 1.5em;
     unicode-bidi: isolate;
   }
   
   h1{
     color: #FEFAE0 ;
-    padding-top: 20px;
-    padding-bottom:20px;
-    font-size: 32px;
+    padding-top: 1em;
+    padding-bottom:1em;
+    font-size: 200%;
+    margin-left: 3em;
+    margin-right: 3em;
   }
   
   h2,h3,h4,h5{
-    padding-top: 20px;
-    padding-bottom:20px;
+    padding-top: 1em;
+    padding-bottom:1em;
     color: #CCD5AE;
-    font-size: 28px;
+    font-size: 180%;
   }
   
   p{
     color: rgb(89, 87, 87);
     column-count: 3;
     column-width: 16rem;;
-    padding-top: 10px;
-    padding-bottom:10px;
+    padding-top: 0.5em;
+    padding-bottom:0.5em;
     line-height: 1.5em;
-    font-size: 20px;
+    font-size: 140%;
   }
   
   blockquote{
     color: rgb(59, 58, 58);
-    padding: 20px;
-    font-size: 20px;
+    padding: 1em;
+    font-size: 140%;
   }
   
   .pre-outside-body{
     color: #FEFAE0;
     background:#CCD5AE;
     border:2px dashed #E9EDC9;
-    padding: 20px;
-    box-shadow:2px 2px 10px #E9EDC9;
+    padding: 1em;
+    box-shadow:0.15em 0.15em 0.15em #E9EDC9;
   }
   
   picture{
     grid-column-start: 3;
-    padding: 20px;
+    padding: 1em;
+  }
+
+  figcaption{
+    font-size: 140%;
   }
   
   img{
     max-width: 100%;
     height: auto;
-    border: #D4A373 2px solid;
+    border: #E9EDC9 2px solid;
     border-radius: 3%;
   }
   
   video{
     max-width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 1em;
   }
   
   .alternative-text{
@@ -548,21 +591,18 @@ blockquote{
     grid-template-rows: 3fr;
     align-items: center;
   }
-  .main-header h1{
-    margin:1em;
-  }
-  
+
   .nav-bar{
     background: #FEFAE0;
   }
   
   .nav-bar ul{
-    padding: 20px;
+    padding: 1em;
   }
   .nav-bar li{
     list-style-type: none;
-    padding-top: 40px;
-    font-size: x-large;
+    padding-top: 1.5em;
+    font-size: 140%;
   }
   
   .nav-bar li a{
@@ -577,18 +617,24 @@ blockquote{
   
   aside{ 
     background: #D4A373;
-    padding: 20px;
+    padding: 1em;
     grid-column-start: 3;
   }
   
   .article-list li{
     list-style-type: none;
-    padding: 8px;
+    padding: 0.4;
   }
   
   .article-list li a{
     text-decoration: none;
     color: #E9EDC9;
+  }
+
+  .learning-list li{
+    margin-left: 1em;
+    margin-top: 0.25em;
+    font-size: 140%;
   }
   
   .alternative-text a{
@@ -605,8 +651,8 @@ blockquote{
   }
   
   form{
-    margin-bottom: 50px;
-    padding: 20px;
+    margin-bottom: 1em;
+    padding: 1em;
   }
   
   address{
@@ -637,7 +683,7 @@ blockquote{
   
   .footer{
     background: #CCD5AE;
-    padding: 20px;
+    padding: 1em;
     grid-column:1/4;
     display: grid;
     align-items: flex-start;
@@ -649,28 +695,28 @@ blockquote{
   
   details{
     color: #FEFAE0;
-    padding: 10px;
+    padding: 0.5;
   }
   
   details ol li{
-    margin-top: 15px;
+    margin-top: 0.8em;
   }
   
   .p-outside-body{
     color: #FEFAE0;
-    padding: 5px;
+    padding: 0.25em;
   }
   
   aside ol{
-    padding: 10px;
+    padding: 0.5em;
   }
  
   aside ol li{
     color: #FEFAE0;
-    margin-top: 10px;
+    margin-top: 0.5em;
     background: #CCD5AE;
-    padding: 10px;
-    box-shadow: 1px 1px 2px #E9EDC9;
+    padding: 0.5em;
+    box-shadow: 0.1em 0.1em 0.15em #E9EDC9;
   }
 
 }
