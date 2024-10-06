@@ -498,10 +498,6 @@ textarea{
     letter-spacing: 0.04em;
   }
 
-  article footer{
-    font-size: 100%;
-  }
-
   .pre-outside-body{
     color: #FEFAE0;
     background:#CCD5AE;
@@ -509,7 +505,6 @@ textarea{
     padding: 1em;
     box-shadow:0.15em 0.15em 0.5em #E9EDC9;
   }
-
 
 blockquote{
   color: rgb(59, 58, 58);
@@ -645,8 +640,7 @@ blockquote{
     margin-top: 0.25em;
     font-size: 120%;
   }
-  
-  
+
   .alternative-text a{
     text-decoration: none;
     color: #E9EDC9;
@@ -806,9 +800,6 @@ blockquote{
     padding: 1em;
   }
 
-  article footer{
-    font-size: 120%%;
-  }
 
   .photo-gallery{
     display: grid;
