@@ -4,6 +4,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -141,6 +142,9 @@ aside{
   grid-column-end: 2;
 }
 
+article footer{
+  font-size: 80%;
+}
 /*general styling */
 
 /* class styling */
@@ -172,6 +176,47 @@ aside{
   max-width: 60vw;
   overflow: scroll;
 }
+
+
+/*video styling for whole screen*/
+#my-video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.video-info{
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FEFAE0;
+  width: 100%;
+  padding:1em;
+}
+
+.video-info p{
+  color: #FEFAE0;
+  margin:1.5em;
+}
+
+#my-button{
+  width: 100px;
+  font-size: 100%;
+  padding: 0.5em;
+  border: none;
+  background: #CCD5AE;
+  color: #FEFAE0;
+  cursor: pointer;
+}
+
+#my-button:hover {
+  background: #ddd;
+  color: black;
+}
+
 
 /* photo gallery styling */
 .photo-gallery{
@@ -451,6 +496,10 @@ textarea{
     color: #CCD5AE;
     font-size: 160%;
     letter-spacing: 0.04em;
+  }
+
+  article footer{
+    font-size: 100%;
   }
 
   .pre-outside-body{
@@ -755,6 +804,10 @@ blockquote{
   picture{
     grid-column-start: 3;
     padding: 1em;
+  }
+
+  article footer{
+    font-size: 120%%;
   }
 
   .photo-gallery{
