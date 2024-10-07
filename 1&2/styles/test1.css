@@ -2,8 +2,6 @@
 
 /*general styling*/
 *{
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -67,10 +65,8 @@ h1{
   letter-spacing: 0.1em;
 }
 
-h2,h3,h4,h5{
-  padding-top: 1em;
-  padding-bottom:0.5em;
-  color: #CCD5AE;
+h2,h3,h4{
+  color: #D4A373;
   letter-spacing: 0.04em;
 }
 
@@ -80,7 +76,7 @@ p{
   padding-bottom: 0.1em;
   line-height: 1.5em;
   column-count: 1;
-  font-size: 100%;
+  font-size: 95%;
   font-family: georgia , sans-serif; 
 }
 
@@ -140,7 +136,7 @@ aside{
   grid-column-end: 2;
 }
 
-article footer{
+section footer{
   font-size: 80%;
 }
 /*general styling */
@@ -160,6 +156,10 @@ article footer{
   display: grid;
   grid-template-rows: 3fr;
   align-items: center;
+}
+
+.header-other{
+  color: #E9EDC9;
 }
 /*pre styling for aside & inside body*/
 .pre-outside-body{
@@ -459,6 +459,10 @@ textarea{
 
 /* Medium devices */
 @media only screen and (min-width: 780px) {
+  *{
+    box-sizing: border-box;
+  }
+
   body{
     margin: auto;
     padding: 0.5em;
@@ -475,7 +479,7 @@ textarea{
     padding-top: 0.5em;
     padding-bottom:0.25em;
     line-height: 1.5em;
-    font-size: 120%;
+    font-size: 110%;
     font-family: georgia ,sans-serif;
   }
 
@@ -491,11 +495,21 @@ textarea{
     letter-spacing: 0.1em;
   }
 
-  h2,h3,h4,h5{
-    padding-top: 1em;
-    padding-bottom:1em;
-    color: #CCD5AE;
-    letter-spacing: 0.04em;
+  h2{
+    font-size: 160%;
+  }
+
+  h3{
+    font-size: 140%;
+  }
+
+  h4{
+    font-size: 120%;
+  }
+  
+  h2,h3,h4{
+  color: #D4A373;
+  letter-spacing: 0.04em;
   }
 
   .pre-outside-body{
@@ -506,11 +520,11 @@ textarea{
     box-shadow:0.15em 0.15em 0.5em #E9EDC9;
   }
 
-blockquote{
-  color: rgb(59, 58, 58);
-  padding: 0.5em;
-  font-size: 120%;
-}
+  blockquote{
+    color: rgb(59, 58, 58);
+    padding: 0.5em;
+    font-size: 120%;
+  }
   
   picture{
     grid-column-start: 3;
@@ -574,6 +588,10 @@ blockquote{
    td{
      font-size: 140%;
      text-align: center;
+   }
+
+   section footer{
+    font-size: 90%;
    }
   
   .alternative-text{
@@ -727,6 +745,9 @@ blockquote{
 
 /*Large devices*/
 @media only screen and (min-width:1024px){
+  *{
+    box-sizing: border-box;
+  }
   
   body{
     max-width: 1200px;
@@ -761,11 +782,20 @@ blockquote{
     margin-right: 3em;
     letter-spacing: 0.15em;
   }
+
+  h2{
+    font-size: 180%;
+  }
+
+  h3{
+    font-size: 160%;
+  }
+
+  h4{
+    font-size: 140%;
+  }
   
-  h2,h3,h4,h5{
-    padding-top: 1em;
-    padding-bottom:1em;
-    color: #CCD5AE;
+  h2,h3,h4{
     letter-spacing: 0.05em;
   }
   
@@ -782,7 +812,6 @@ blockquote{
     column-count: 3;
     column-width: auto;;
   }
-
 
   
   blockquote{
@@ -843,7 +872,6 @@ blockquote{
     padding: 1em;
   }
 
-
   table{
    table-layout: auto;
    width: 100%;
@@ -864,6 +892,9 @@ blockquote{
     text-align: center;
   }
 
+  section footer{
+    font-size: 90%;
+   }
   
   .alternative-text{
     color: #FEFAE0;
