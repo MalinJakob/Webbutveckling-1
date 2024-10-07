@@ -53,13 +53,15 @@
           <header>
             <h3>Right Now</h3>
           </header>
-          <p>
+          <p class="longer-text">
             At the present I am learning how to create a webpage from scratch.
             For now I can some basic HTML code and starting to learn more about
             CSS. Every day I am learning some new elements and ways to structure
-            code more correctly (better I guess). The most tangible thing I am
-            doing at the moment is starting to understand code in genal and the
-            way computer work. Pretty cool, actually!
+            code more correctly (better I guess). In every assignment we look at
+            something new and add more and more to our knowledge base and
+            webpage. The most tangible thing I am doing at the moment is
+            starting to understand code in genal and the way computer work.
+            Pretty cool, actually!
           </p>
         </section>
         <section>
@@ -76,7 +78,7 @@
           <header>
             <h3>Projects</h3>
           </header>
-          <p>
+          <p class="longer-text">
             This week we are looking att images, videos & audio for the web.
             This is regard of the format and how it behaves on the site. These
             three different (but very the same) pictures of me are saved with
@@ -84,7 +86,7 @@
           </p>
           <figure class="photo-gallery">
             <img
-              src="Images/1-profilbild-pejrogressive-20.jpeg"
+              src="Images/1-profilbild-not-progressive-20.jpeg"
               alt="a profile picture of me standing in front of bushes with white flowers"
             />
             <figcaption>
@@ -114,7 +116,7 @@
           </figure>
         </section>
       </section>
-      <section>
+      <article>
         <header>
           <h2>Things I Learned this Week</h2>
         </header>
@@ -130,14 +132,11 @@
             <col span="1" style="background-color: #f4dcf2" />
             <col span="6" style="background-color: #facbf9" />
           </colgroup>
-          <thead>
             <tr>
               <th>Name</th>
               <th>Elements</th>
               <th>Attributes</th>
             </tr>
-          </thead>
-          <tbody>
             <tr>
               <th>Table</th>
               <td>&lt;table&gt;</td>
@@ -151,14 +150,12 @@
             <tr>
               <th>Table Heading</th>
               <td>&lt;th&gt;</td>
-              <td>rowspan</td>
+              <td rowspan="2">rowspan</td>
             </tr>
             <tr>
               <th>Table Data</th>
               <td>&lt;td&gt;</td>
-              <td>rowspan</td>
             </tr>
-          </tbody>
         </table>
         <h3>Hours Spent Studying</h3>
         <table>
@@ -169,40 +166,46 @@
             <col span="1" style="background-color: #f4d0d4" />
             <col span="6" style="background-color: #ffc0cb" />
           </colgroup>
-          <tr>
-            <th></th>
-            <th scope="col">Monday</th>
-            <th scope="col">Tuesday</th>
-            <th scope="col">Wednesday</th>
-            <th scope="col">Thursday</th>
-            <th scope="col">Friday</th>
-          </tr>
-          <tr>
-            <th scope="row">Hours w.36</th>
-            <td>3</td>
-            <td>2</td>
-            <td>4</td>
-            <td>3</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <th scope="row">Hours w.37</th>
-            <td>3</td>
-            <td>2</td>
-            <td>4</td>
-            <td>3</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <th scope="row">Total Hours</th>
-            <td>28</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Hours w. 36</th>
+              <td>3</td>
+              <td>2</td>
+              <td>4</td>
+              <td>3</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th>Hours w. 37</th>
+              <td>3</td>
+              <td>2</td>
+              <td>4</td>
+              <td>3</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Total Hours</th>
+              <td colspan="5">28</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tfoot>
         </table>
-      </section>
+      </article>
     </main>
     <aside>
       <h3>Read More</h3>
@@ -214,6 +217,16 @@
           <li>Q: Do you find it difficult? <br />A: Yes sometimes</li>
         </ol>
       </details>
+      <h3 class="header-other">On the agenda this week</h3>
+      <p class="p-outside-body">Learning more of the following topics;</p>
+      <dl>
+        <dt><b>HTML</b></dt>
+        <dd>HyperText Markup Language</dd>
+        <dt><b>CSS</b></dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt><b>Git</b></dt>
+        <dd>Global Information Tracker</dd>
+      </dl>
     </aside>
     <footer class="footer">
       <address>

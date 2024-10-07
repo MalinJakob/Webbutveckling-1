@@ -81,8 +81,7 @@ p{
   line-height: 1.5em;
   column-count: 1;
   font-size: 100%;
-  font-family: georgia , sans-serif;
-  
+  font-family: georgia , sans-serif; 
 }
 
 blockquote{
@@ -473,13 +472,16 @@ textarea{
   
   p{
     color: rgb(89, 87, 87);
-    column-count: 2;
-    column-width: 8rem;;
     padding-top: 0.5em;
     padding-bottom:0.25em;
     line-height: 1.5em;
     font-size: 120%;
     font-family: georgia ,sans-serif;
+  }
+
+  .longer-text{
+    column-count: 2;
+    column-width: auto;;
   }
 
   h1{
@@ -769,14 +771,19 @@ blockquote{
   
   p{
     color: rgb(89, 87, 87);
-    column-count: 3;
-    column-width: 16rem;;
     padding-top: 0.5em;
     padding-bottom:0.5em;
     line-height: 1.5em;
     font-size: 140%;
     font-family: georgia, sans-serif;
   }
+
+  .longer-text{
+    column-count: 3;
+    column-width: auto;;
+  }
+
+
   
   blockquote{
     color: rgb(59, 58, 58);
