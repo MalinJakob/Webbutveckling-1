@@ -71,7 +71,6 @@ h2,h3,h4,h5{
   padding-top: 1em;
   padding-bottom:0.5em;
   color: #CCD5AE;
-  font-size: 130%;
   letter-spacing: 0.04em;
 }
 
@@ -494,7 +493,6 @@ textarea{
     padding-top: 1em;
     padding-bottom:1em;
     color: #CCD5AE;
-    font-size: 160%;
     letter-spacing: 0.04em;
   }
 
@@ -766,7 +764,6 @@ blockquote{
     padding-top: 1em;
     padding-bottom:1em;
     color: #CCD5AE;
-    font-size: 180%;
     letter-spacing: 0.05em;
   }
   

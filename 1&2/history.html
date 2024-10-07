@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="application-name" content="Malins Webpage" />
@@ -12,7 +12,7 @@
     <meta name="keywords" content="CSS,HTML,adventure" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles/test1.css?rnd=12345" />
-    <title>Home of Malin Jakob</title>
+    <title>Malin Jakob</title>
   </head>
   <body>
     <header class="main-header">
@@ -74,19 +74,19 @@
       </section>
       <section>
         <header>
-          <h3>A glimpse into my past</h3>
+          <h2>A glimpse into my past</h2>
         </header>
-        <article>
+        <section>
           <header>
-            <h4>Objects</h4>
-            <p>
-              This video is from a piece called Objects. Objects is ,as it
-              sounds, about object you can touch and how they feel. It is
-              created by me and Anna Maxstad in 2016. See the whole video in
-              fullscreen in a new tab
-              <a id="button" href="fullscreen.html" target="_blank">HERE</a>
-            </p>
+            <h3>Objects</h3>
           </header>
+          <p>
+            This video is from a piece called Objects. Objects is, as it sounds,
+            about object you can touch and how they feel. It is created by me
+            and Anna Maxstad in 2016. See the whole video in fullscreen in a new
+            tab
+            <a id="button" href="fullscreen.html" target="_blank" title="open video in full screen">HERE</a>
+          </p>
           <video poster="Images/dance.jpg" controls preload="none">
             <source src="Videos/Improvisation Uppgift .mp4" type="video/mp4" />
           </video>
@@ -97,28 +97,28 @@
               <i> The Royal Swedish Ballet School</i>
             </p>
           </footer>
-          <article>
-            <header>
-              <h4>Korsaren</h4>
-              <p>
-                This is me dancing the piece called Korsaren at a Christmas
-                Show. Choreographer: Ylva Rhodin.
-              </p>
-            </header>
-            <video poster="Images/korsare.jpg" controls preload="none">
-              <source src="Videos/korsaren-jul-2013.mp4" type="video/mp4" />
-            </video>
-            <footer>
-              <p>
-                From<time datetime="2013-12-12"> the 12 of December 2013</time>.
-                Christmas Show at
-                <i> Skånska Småstadens Kulturskola</i>
-              </p>
-            </footer>
-          </article>
-        </article>
-        <article>
-          <h4>Waves</h4>
+        </section>
+        <section>
+          <header>
+            <h3>Korsaren</h3>
+          </header>
+          <p>
+            This is me dancing the piece called Korsaren at a Christmas Show.
+            Choreographer: Ylva Rhodin.
+          </p>
+          <video poster="Images/korsare.jpg" controls preload="none">
+            <source src="Videos/korsaren-jul-2013.mp4" type="video/mp4" />
+          </video>
+          <footer>
+            <p>
+              From<time datetime="2013-12-12"> the 12 of December 2013</time>.
+              Christmas Show at
+              <i> Skånska Småstadens Kulturskola</i>
+            </p>
+          </footer>
+        </section>
+        <section>
+          <h3>Waves</h3>
           <p>
             This audio is a part of a dance piece called Waves, created by me in
             2018.
@@ -131,9 +131,11 @@
               and audio by Malin Jakob
             </p>
           </footer>
-        </article>
-        <article>
-          <h4>OB Logo</h4>
+        </section>
+        <section>
+          <header>
+            <h3>OB Logo</h3>
+          </header>
           <p>
             These logos are created by me in the summer of 2023. The logos are
             the "same", they are just saved in different format regarding
@@ -166,18 +168,16 @@
               Image format: With transparency, 256 colors and with interlacing.
             </figcaption>
           </figure>
-        </article>
+        </section>
       </section>
       <section>
         <header>
           <h3>Before <abbr title="University">Uni</abbr></h3>
         </header>
-        <article class="pre-inside-body">
-          <pre>When I was looking at code before <abbr title="University">Uni</abbr> it looked like Japanese. 
+          <pre class="pre-inside-body">When I was looking at code before <abbr title="University">Uni</abbr> it looked like Japanese. 
             A lot of characters with no meaning, "£$2©∞§£§@]±. And text everywhere 
             but it seemed to look out of place. Just like 
             this paragraph..@©≈$[∞ƒ‘ßœ©ç’≈•≈‘</pre>
-        </article>
       </section>
     </main>
     <aside>
@@ -206,9 +206,7 @@
       <nav>
         <a href="#top">BACK TO THE TOP</a>
       </nav>
-      <section>
-        <p>&copy; 2024 Malin Jakob AB</p>
-      </section>
+      <p>&copy; 2024 Malin Jakob AB</p>
     </footer>
   </body>
 </html>
