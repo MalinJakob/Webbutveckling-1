@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="application-name" content="B-Day Alert" />
+    <meta name="author" content="Malin Jakob" />
+    <meta
+      name="description"
+      content="This page is about getting reminders about birthdays"
+    />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="keywords" content="birthday, alert" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>B-Day Alert</title>
+  </head>
+  <body>
+    <header>
+      <h1>B-day Alert</h1>
+    </header>
+    <p id="importantInfo">
+      Tired of being embarrassed when you forget your Grandmothers birthday?
+      Fear no more, we have the solution for you. With B-day Alert you get
+      notices on the day of you love ones birthday, but also days, weeks and
+      months if you would like. So you have the right amount of time to find the
+      perfect present!
+    </p>
+    <!--add action , where is the form going to?-->
+    <form action="" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Your Details</legend>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="John Doe"
+          required
+        />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="John.Doe@email.com"
+          required
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Make sure you are NOT a robot</legend>
+        <p>Answer this question to continue</p>
+    <!--add the question for notRobot - do i do it here or in JS file?-->
+        <div id="questionNotRobot"></div>
+        <input type="text" name="notRobot" id="notRobot" required>
+        <button type="submit">Sign Up</button> 
+      </fieldset>
+    </form>
+    <footer>
+      <address>
+        <h3>Contact</h3>
+        <p>
+          Email: <a href="mailto:malin.jakob98@gmail.com"
+            >Malin.jakob98@gmail.com</a
+          >
+        </p>
+        <p>Phone: <a href="tel:+123456789">123456789</a></p>
+      </address>
+      <p>&copy; 2024 Malin Jakob AB</p>
+    </footer>
+  </body>
+</html>

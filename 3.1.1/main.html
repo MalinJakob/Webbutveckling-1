@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="application-name" content="B-Day Alert" />
+    <meta name="author" content="Malin Jakob" />
+    <meta
+      name="description"
+      content="This page is about getting reminders about birthdays"
+    />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="keywords" content="birthday, alert" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>B-Day Alert</title>
+  </head>
+  <body>
+    <header>
+      <h1>B-day Alert</h1>
+    </header>
+    <h2>Your Contacts</h2>
+    <ul>
+      <!-- contact generates  here-->
+    </ul>
+    <button id="addContactButton">Add Contact</button>
+    <!-- form to add a new contact-->
+    <form action="">
+      <fieldset>
+        <legend>Contact Info</legend>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required />
+        <br />
+        <br />
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" required />
+      </fieldset>
+      <fieldset>
+        <legend>Notification</legend>
+        <label for="notificationOption"></label>
+        <select name="notices" id="notificationOption">
+          <option value="day">On the day</option>
+          <option value="week">One week before</option>
+          <option value="month">One month before</option>
+        </select>
+        <p>
+          Check the <b>Favorite Person</b> box if you automatically want notices one month, one week and
+          on the day for that person.
+        </p>
+        <label for="favoritePerson">Favorite People</label>
+        <input type="checkbox" name="favoritePerson" id="favoritePerson" />
+        <button id="saveButton">Save Contact</button>
+      </fieldset>
+    </form>
+    <footer>
+      <address>
+        <h3>Contact</h3>
+        <p>
+          Email: <a href="mailto:malin.jakob98@gmail.com"
+            >Malin.jakob98@gmail.com</a
+          >
+        </p>
+        <p>Phone: <a href="tel:+123456789">123456789</a></p>
+      </address>
+      <p>&copy; 2024 Malin Jakob AB</p>
+    </footer>
+  </body>
+</html>
