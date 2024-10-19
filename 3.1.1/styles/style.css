@@ -13,7 +13,12 @@ body{
   background-size: auto;
 }
 
-h1,h2,h3{
+h1{
+  color: rgb(7, 184, 249);
+  text-shadow: #A672C1 1px 2px  2px;
+}
+
+h2,h3{
   color: whitesmoke;
 }
 
@@ -33,7 +38,13 @@ form{
   align-items: center;
   background: white;
   padding: 1.5em;;
-  color: black
+  color: black;
+}
+
+ul{
+  background: white;
+  max-height:50% ;
+  overflow: scroll;
 }
 
 footer{
@@ -59,10 +70,29 @@ address a{
 }
 
 address a:hover{
-  color: aqua;
+  color: #A672C1;
 }
 
 
 #importantInfo{
   font-size: 130%;
+  line-height: 1.3em;
+}
+
+#addContactButton{
+  padding: 0.5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  background: #A672C1;
+  color: whitesmoke;
+  border: #A672C1;
+}
+
+#addContactButton:hover{
+  background: #07B8F9;
+}
+
+#addContactButton:active{
+  background: whitesmoke;
+  color: #07B8F9;
 }
