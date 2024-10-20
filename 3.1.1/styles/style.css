@@ -41,10 +41,34 @@ form{
   color: black;
 }
 
+fieldset{
+  border: #07B8F9 solid;
+}
+
+legend{
+  font-weight: bold;
+  color: #07B8F9;
+}
+
+form input:focus{
+  background: #C0B4C4 ;
+  opacity: 0.4s;
+}
+
 ul{
   background: white;
-  max-height:50% ;
+  max-height:70% ;
+  padding: 1em;
   overflow: scroll;
+  background: #A672C1;
+}
+
+ul li{
+  list-style-type: decimal;
+  margin-top: 0.5em;
+  margin-left: 1em;
+  color: whitesmoke;
+
 }
 
 footer{
@@ -73,7 +97,6 @@ address a:hover{
   color: #A672C1;
 }
 
-
 #importantInfo{
   font-size: 130%;
   line-height: 1.3em;
@@ -95,4 +118,9 @@ address a:hover{
 #addContactButton:active{
   background: whitesmoke;
   color: #07B8F9;
+}
+
+#formHeader{
+  color: #07B8F9;
+  margin: 0;
 }

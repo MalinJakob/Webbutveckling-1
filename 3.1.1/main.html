@@ -19,13 +19,14 @@
       <h1>B-day Alert</h1>
       <h3 id="welcomeMessage"></h3>
     </header>
-    <h2>Your Contacts</h2>
-    <ul>
-      <!-- contact generates  here-->
+    <h2>Birthday This Month</h2>
+    <ul id="birthdayListThisMonth">
     </ul>
-    <button id="addContactButton">Add Contact</button>
-    <!-- form to add a new contact-->
-    <form action="">
+    <h2>Your Contacts</h2>
+    <ul id="contactList">
+    </ul>
+    <form id="contactForm" action="#" method="get">
+      <h3 id="formHeader">Add New Contact</h3>
       <fieldset>
         <legend>Contact Info</legend>
         <label for="name">Name:</label>
@@ -38,18 +39,19 @@
       <fieldset>
         <legend>Notification</legend>
         <label for="notificationOption"></label>
-        <select name="notices" id="notificationOption">
+        <select name="notices" id="notificationOption" multiple>
           <option value="day">On the day</option>
           <option value="week">One week before</option>
           <option value="month">One month before</option>
+          <option value="all">All the above</option>
         </select>
         <p>
           Check the <b>Favorite Person</b> box if you automatically want notices one month, one week and
           on the day for that person.
         </p>
         <label for="favoritePerson">Favorite People</label>
-        <input type="checkbox" name="favoritePerson" id="favoritePerson" />
-        <button id="saveButton">Save Contact</button>
+        <input type="checkbox" name="favoritePerson" id="favoritePerson" /> 
+        <input type="submit" id="addContactButton" value="Save Contact"></input>
       </fieldset>
     </form>
     <footer>

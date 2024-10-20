@@ -3,7 +3,7 @@
 
 // function signUpForm () {
 //   const signUp = document.getElementById('signUp')
-//   signUp.addEventListener('submit', function (event) {
+//   signUp.addE.ventListener('submit', function (event) {
 //     const name = document.getElementById('name').value
 //     const email = document.getElementById('email').value
 //   })
@@ -19,8 +19,8 @@ function notRobotQuestion () {
   //handle changes to the input field
   const message = document.getElementById('message')
   const submitButton = document.getElementById('submitButton')
-
   const userAnswerInput = document.getElementById('userAnswer')
+ 
   userAnswerInput.addEventListener('input', function (event) {
     if (parseInt(event.target.value) === total) {
       message.innerText = 'You are NOT a robot, please continue'
