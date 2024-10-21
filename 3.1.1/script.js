@@ -22,11 +22,10 @@ function importantDaySaver () {
     const totalUpperDate = makeUpper + myDate
     console.log(totalUpperDate)
     const isUpper = makeUpper.match(/[!!]/i)
-    console.log(isUpper)
     if (isUpper) {
       importantDays.push(total)
     }
-    console.log('\nMy important days are ' + importantDays)
   }
+  console.log('\nMy important days are ' + importantDays)
 }
 importantDaySaver()
