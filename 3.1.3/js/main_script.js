@@ -1,17 +1,14 @@
-//read in query from form and add it so HTML as message to welcome the user in
-// add the welcome text with the name from user
-//extract everything on the lest of @ to generate the username
-//create empty array
-//add contact function
-//take in the element from html
-//EventLister for waiting for the user to submit
-//take in the value from the form from the user
-// see what type of notices the user chooses for that contact
-// add contact to array
-// create a  new li element with the content of the new contact and add to ul in Html
-//take in ul element and then create a new Date and use the method getMonth to get current month
-//check if contacts birthday is current month and if the month match print it in the list
+//part of the application where you can add contact and how you want 
+//their notices to be and add them to a list for the user to see
+// as an overview 
+
 function getQueryString () {
+
+  //ska jag lägga resten av programmet i funktionen? 
+  window.addEventListener("load", (event) => {
+    console.log("page is fully loaded");
+  });
+
   const queryString = window.location.search
   const searchQuery = new URLSearchParams(queryString)
   const name = searchQuery.get('name')
@@ -20,20 +17,37 @@ function getQueryString () {
   message.innerHTML = `Welcome ${name}! Your user name is ${
     email.match(/^[^@]+/)[0]
   } `
-   
+
   const classHeader = document.getElementsByClassName('myHeader')
   const myHeader = classHeader[0]
   console.log(myHeader)
-  if(myHeader.classList.contains('myHeader')){
-    myHeader.classList.remove('myHeader');
-    myHeader.classList.add('differentHeader');
+  if (myHeader.classList.contains('myHeader')) {
+    myHeader.classList.remove('myHeader')
+    myHeader.classList.add('differentHeader')
   }
 }
+//borde jag göra något mer här?
+const saveContactButton = document.getElementById('addContactButton')
+saveContactButton.addEventListener('click', function () {
+  console.log('clicked')
+})
+
+//kan vi diskutera varför man skulle vilja ha detta? 
+const birthdayInput = document.getElementById('birthday')
+birthdayInput.addEventListener('keydown' , function (event){
+  console.log('Key pressed down: ' + event.key);
+})
+birthdayInput.addEventListener('keyup' , function (event){
+  console.log('Key letted go: ' + event.key);
+})
 
 const contacts = []
 function addContact () {
   const contactForm = document.getElementById('contactForm')
   const contactList = document.getElementById('contactList')
+  const nameFocus = document.getElementById('contactName')
+  nameFocus.focus()
+
 
   //have the functions first then call the event listener with
   // the parameters and the function --> as th book s.273-276 se ex
@@ -65,6 +79,7 @@ function addContact () {
         notification: chosenNotices,
         favoritePerson
       })
+
     const listItem = document.createElement('li')
     listItem.innerText = `Name: ${contactName}
       Birthday: ${contactBirthday}

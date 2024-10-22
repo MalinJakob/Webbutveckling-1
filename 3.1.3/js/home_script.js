@@ -1,15 +1,12 @@
-//add Sign Up function with 3 required inputs; Name, Email and answer if it is Not a Robot
-//If everything is true the submit button will be clickable and the form is ready for submission
+//application where you can register to get notices when a
+//added contact hade their birthday, on given times by the user 
 
-// function signUpForm () {
-//   const signUp = document.getElementById('signUp')
-//   signUp.addE.ventListener('submit', function (event) {
-//     const name = document.getElementById('name').value
-//     const email = document.getElementById('email').value
-//   })
-// }
-//print the question
-//handle changes to the input field
+function x() {
+  window.alert('Page is ready for yaa!'); 
+}
+
+document.getElementById("b").addEventListener("click", x);
+
 
 function notRobotQuestion () {
 

@@ -124,7 +124,7 @@ address a:hover{
   line-height: 1.3em;
 }
 
-#addContactButton{
+.button{
   padding: 0.5em;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
@@ -133,11 +133,11 @@ address a:hover{
   border: #A672C1;
 }
 
-#addContactButton:hover{
+.button:hover{
   background: #07B8F9;
 }
 
-#addContactButton:active{
+.button:active{
   background: whitesmoke;
   color: #07B8F9;
 }
