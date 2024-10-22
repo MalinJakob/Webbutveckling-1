@@ -1,20 +1,7 @@
 //read in query from form and add it so HTML as message to welcome the user in
-function getQueryString () {
-  const queryString = window.location.search
-  const searchQuery = new URLSearchParams(queryString)
-  const name = searchQuery.get('name')
-  const email = searchQuery.get('email')
-  // add the welcome text with the name from user
-  //extract everything on the lest of @ to generate the username
-  const message = document.getElementById('welcomeMessage')
-  message.innerHTML = `Welcome ${name}! Your user name is ${
-    email.match(/^[^@]+/)[0]
-  } `
-}
-
+// add the welcome text with the name from user
+//extract everything on the lest of @ to generate the username
 //create empty array
-const contacts = []
-
 //add contact function
 //take in the element from html
 //EventLister for waiting for the user to submit
@@ -24,6 +11,26 @@ const contacts = []
 // create a  new li element with the content of the new contact and add to ul in Html
 //take in ul element and then create a new Date and use the method getMonth to get current month
 //check if contacts birthday is current month and if the month match print it in the list
+function getQueryString () {
+  const queryString = window.location.search
+  const searchQuery = new URLSearchParams(queryString)
+  const name = searchQuery.get('name')
+  const email = searchQuery.get('email')
+  const message = document.getElementById('welcomeMessage')
+  message.innerHTML = `Welcome ${name}! Your user name is ${
+    email.match(/^[^@]+/)[0]
+  } `
+   
+  const classHeader = document.getElementsByClassName('myHeader')
+  const myHeader = classHeader[0]
+  console.log(myHeader)
+  if(myHeader.classList.contains('myHeader')){
+    myHeader.classList.remove('myHeader');
+    myHeader.classList.add('differentHeader');
+  }
+}
+
+const contacts = []
 function addContact () {
   const contactForm = document.getElementById('contactForm')
   const contactList = document.getElementById('contactList')
@@ -50,12 +57,14 @@ function addContact () {
     } else if (notification.includes('all')) {
       chosenNotices = ['day', 'week', 'month']
     }
-    contacts.push({
-      contactName,
-      contactBirthday,
-      notification: chosenNotices,
-      favoritePerson
-    })
+
+    if (contactName)
+      contacts.push({
+        contactName,
+        contactBirthday,
+        notification: chosenNotices,
+        favoritePerson
+      })
     const listItem = document.createElement('li')
     listItem.innerText = `Name: ${contactName}
       Birthday: ${contactBirthday}
@@ -84,6 +93,9 @@ function addContact () {
     }
   })
 }
+
+//ta bort ett HTML element - get by id then element.remove()
+//ta in text content från html element
 
 getQueryString()
 addContact()

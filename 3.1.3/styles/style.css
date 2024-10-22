@@ -31,6 +31,15 @@ h1{
   text-shadow: #A672C1 1px 2px  2px;
 }
 
+.myHeader{
+  color: #A672C1
+}
+
+.differentHeader{
+  color: #A672C1;
+  text-shadow: #07B8F9 1px 2px  1px;
+}
+
 h2,h3{
   color: whitesmoke;
 }

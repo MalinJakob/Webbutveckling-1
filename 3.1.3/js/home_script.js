@@ -8,15 +8,16 @@
 //     const email = document.getElementById('email').value
 //   })
 // }
+//print the question
+//handle changes to the input field
 
 function notRobotQuestion () {
-  //print the question
+
   const randomNum = Math.floor(Math.random() * 10) + 1
   const total = randomNum + 2
   const notRobot = document.getElementById('notRobot')
   notRobot.innerHTML = `What is ${randomNum} + 2?`
 
-  //handle changes to the input field
   const message = document.getElementById('message')
   const submitButton = document.getElementById('submitButton')
   const userAnswerInput = document.getElementById('userAnswer')
@@ -33,7 +34,18 @@ function notRobotQuestion () {
   })
 }
 
+function notForFree(){
+  const getMonth = new Date()
+  const todaysMonth = getMonth.getMonth()
+  console.log(getMonth)
+  if (todaysMonth === 9 || todaysMonth === 10 ){
+    const forFree = document.getElementById('forFree')
+    const removeForFree = forFree.remove()
+  }
+}
+
 notRobotQuestion()
+notForFree()
 
 //add contacts to lits. Get both value of name and the birthday stored in an array
 // const contacts = []
