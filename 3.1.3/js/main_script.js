@@ -26,13 +26,12 @@ function getQueryString () {
     myHeader.classList.add('differentHeader')
   }
 }
-//borde jag göra något mer här?
+
 const saveContactButton = document.getElementById('addContactButton')
 saveContactButton.addEventListener('click', function () {
   console.log('clicked')
 })
 
-//kan vi diskutera varför man skulle vilja ha detta? 
 const birthdayInput = document.getElementById('birthday')
 birthdayInput.addEventListener('keydown' , function (event){
   console.log('Key pressed down: ' + event.key);
@@ -48,17 +47,13 @@ function addContact () {
   const nameFocus = document.getElementById('contactName')
   nameFocus.focus()
 
-
-  //have the functions first then call the event listener with
-  // the parameters and the function --> as th book s.273-276 se ex
   contactForm.addEventListener('submit', function (event) {
     event.preventDefault()
 
     const contactName = document.getElementById('contactName').value
     const contactBirthday = document.getElementById('birthday').value
 
-    //can the row below change to something similar to page 283 --> it is much lesser code
-    //as well as more readable
+  
     const notification = Array.from(
       document.getElementById('notificationOption').selectedOptions
     ).map(option => option.value)
@@ -108,9 +103,6 @@ function addContact () {
     }
   })
 }
-
-//ta bort ett HTML element - get by id then element.remove()
-//ta in text content från html element
 
 getQueryString()
 addContact()
