@@ -1,0 +1,21 @@
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  justify-items: center;
+  margin-top: 5em;
+}
+
+#myButton{
+  background: pink;
+  color: purple;
+  width: 200px;
+  height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  border: purple 2px solid;
+}
+
+h1{
+  color: palevioletred;
+}
