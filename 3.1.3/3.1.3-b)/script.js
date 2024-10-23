@@ -1,14 +1,20 @@
+const myLink = document.getElementById('myLink')
+
+function notClickable (event){
+  event.preventDefault()
+    alert('The Button is NOT in Use ')
+}
+
+
 
 function myButtonFunction () {
   
-  const myLink = document.getElementById('myLink')
-  myLink.addEventListener('click', function (event) {
-    event.preventDefault()
-    alert('The Button is NOT in Use ')
-  })
+  myLink.addEventListener('click', notClickable)
+  setTimeout(function(){
+    myLink.removeEventListener('click' , notClickable)
+  },10000)
   
   const myButton = document.getElementById('myButton')
-
   myButton.onmouseover = function (event) {
     const target = event.target
     target.style.background = 'green'
@@ -23,12 +29,7 @@ function myButtonFunction () {
     target.style.background = ''
   }
 
-  //gör en del där vi tar in massa klicks och om de har 
-  // klickat x-anatl gågner så tar vi bort event listnernen med prevent default 
-  //const saveContactButton = document.getElementById('addContactButton')
-  //saveContactButton.addEventListener('click', function () {
-  //console.log('clicked')
-//})
 }
+
 
 myButtonFunction()
