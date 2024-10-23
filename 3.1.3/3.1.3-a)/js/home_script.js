@@ -44,14 +44,3 @@ function notForFree(){
 notRobotQuestion()
 notForFree()
 
-//add contacts to lits. Get both value of name and the birthday stored in an array
-// const contacts = []
-
-// function addContact (name, birthday) {
-//   var obj = {}
-//   obj[name] = birthday
-//   contacts.push(obj)
-// }
-// const contactName = document.getElementById('contactName').value
-// const contactBirthday = documents.getElementById('birthday').value
-//addContact(contactName, contactBirthday)
