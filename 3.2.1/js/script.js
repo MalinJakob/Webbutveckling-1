@@ -1,3 +1,6 @@
+//an preloaded image gallery that changes images each 2 
+//second and when you hover your mouse over the images 
+
 function preloadImages () {
   if (document.images) {
     const img1 = new Image()
