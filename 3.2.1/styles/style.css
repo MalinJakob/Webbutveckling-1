@@ -4,6 +4,12 @@ body{
   grid-auto-rows: auto;
 }
 
+img{
+  margin: 1.5em;
+  height: 600px;
+  width: auto;
+}
+
 h1{
   text-align: center;
   color: pink;
@@ -11,5 +17,9 @@ h1{
 }
 
 div{
-  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  justify-items: center;
 }
+
