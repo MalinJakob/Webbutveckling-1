@@ -1,0 +1,15 @@
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+}
+
+h1{
+  text-align: center;
+  color: pink;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div{
+  
+}
