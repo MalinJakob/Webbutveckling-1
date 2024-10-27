@@ -6,7 +6,7 @@ body{
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  gap: 0.5em;
+  gap: em;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -81,12 +81,11 @@ p{
   color: #D8E1D3;
 }
 
-
 main{
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  padding: 1em;
+  padding: 0.5em;
   justify-items: center;
 }
 
@@ -94,7 +93,7 @@ section{
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  padding: 1em;
+  padding: 0.5em;
   justify-content: center;
 }
 

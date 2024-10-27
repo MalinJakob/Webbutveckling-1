@@ -21,7 +21,90 @@
       <title>Freya Photos</title>
     </head>
     <body>
-
+      <header id="mainHeader">
+        <h1>Freya Photos</h1>
+        <nav id="navBarHeader">
+          <ul id="navList">
+            <li><a href="home.html">HOME</a></li>
+            <li class="currentPage"><a href="about.html">ABOUT</a></li>
+            <li><a href="price.html">PRICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <form
+          action=""
+          method="get"
+        >
+          <fieldset class="contactBox">
+            <legend>Contact</legend>
+            <label for="name">Name:</label>
+            <input
+              class="form-input"
+              type="text"
+              id="name"
+              name="name"
+              size="30"
+              maxlength="100"
+              placeholder="John Doe"
+              autofocus
+              required
+            />
+            <br />
+            <br />
+            <label for="email">Email:</label>
+            <input
+              class="form-input"
+              type="email"
+              id="email"
+              name="email"
+              size="30"
+              maxlength="100"
+              placeholder="JohnDoe@gmail.com"
+              required
+            />
+            <br />
+            <br />
+            <label for="message"></label>
+            <legend>Write your message here:</legend>
+            <textarea
+              class="form-input"
+              name="message"
+              id="message"
+              required
+              rows="4"
+              cols="60"
+            ></textarea>
+            <input id="send-button" type="submit" name="submit" value="Send" />
+          </fieldset>
+        </form>
+      </main>
+      <footer>
+        <nav id="navBarFooter">
+          <ul id="footerNav">
+            <li class="currentPage"><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="price.html">PRICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div id="footerContainer">
+          <div class="social-media" class="social-media-icons">
+            <a
+              href="https://www.facebook.com/malin.jakob"
+              target="_blank"
+              class="fa fa-facebook"
+            ></a>
+            <a
+              href="https://www.instagram.com/malinjakob/"
+              target="_blank"
+              class="fa fa-instagram"
+            ></a>
+          </div>
+          <p class="copyRight">&copy; 2024 Malin Jakob AB</p>
+        </div>
+      </footer>
     </body>
   </html>
 </html>
