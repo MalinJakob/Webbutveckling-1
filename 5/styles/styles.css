@@ -12,9 +12,10 @@ body{
 
 #mainHeader{
   background: #647973;
-  min-width: 100%;
+  width: 100%;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 h1{
@@ -25,6 +26,7 @@ h1{
 
 h2, h3{
   color: #647973;
+  letter-spacing: 0.1em;
 }
 
 p{
@@ -43,6 +45,7 @@ p{
   grid-template-columns: repeat(4, auto);
   gap:1.5em;
   justify-items: center;
+  letter-spacing: 0.2em;
 }
 
 #navBarHeader li{
@@ -139,5 +142,140 @@ h3{
   cursor: pointer;
 }
 
+#aboutUs{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1.5em;
+  justify-items: center;
+  background: #647973;
+  color: #D8E1D3;
+}
+
+#aboutUsHeader{
+  color: #D8E1D3;
+}
+
+#aboutText{
+  width: 80%;
+  line-height: 1.5em;
+}
+
+.employInfo{
+  background:#D8E1D3;
+  margin-bottom: 3em;
+  display: grid;
+  justify-items: center;
+}
+
+.roundImage{
+  margin-top: 1.5em;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);;
+}
+
+footer{
+  background: #647973;
+  width: 100%;
+}
+
+#footerContainer{
+  display: grid;
+  grid-template-columns:1fr;
+  gap: 1em;
+  margin-bottom: 1em;
+  align-items: center;
+}
+
+.contact{
+  color: #D8E1D3;
+  letter-spacing: 0.1em;
+  display: grid;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.contact:hover{
+  color: #ACB5A0;
+  transition: ease-in 0.1s;
+}
+
+#navBarFooter{
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+#footerNav{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap:1.5em;
+  margin-bottom: 1em;
+  justify-items: center;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+
+#footerNav li{
+  list-style-type: none;
+  text-align: center;
+}
 
 
+#footerNav a{
+  text-decoration: none;
+  color: #D8E1D3;
+  letter-spacing: 0.1em;
+}
+
+#footerNav a:hover{
+  color: #ACB5A0;
+  transition: ease-in 0.1s;
+}
+
+#footerNav a:active{
+  text-decoration: underline;
+  text-underline-offset:0.4em ;
+  color: #ACB5A0;
+}
+
+.copyRight{
+  color: #D8E1D3;
+  display: grid;
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.social-media{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  justify-content: center;
+  gap: 1em;
+}
+
+.social-media .fa{
+  display: grid;
+  padding: 0.5em;
+  font-size: 1em;
+  width: 30px;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+}
+
+.social-media .fa-facebook {
+  background: #3B5998;
+  color: white;
+  text-decoration: none;
+}
+
+.social-media .fa-instagram {
+  background: #983b7b;
+  color: white;
+  text-decoration: none;
+}
