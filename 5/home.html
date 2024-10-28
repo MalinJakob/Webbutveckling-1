@@ -22,6 +22,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       />
+      <script src="js/jquery-3.7.1.js"></script>
       <title>Freya Photos</title>
     </head>
     <body>
@@ -37,6 +38,9 @@
         </nav>
       </header>
       <main>
+        <div class="homeImg">
+          <img src="images/gallery/gallery1.jpg" id="currentImage" />
+        </div>
         <header>
           <h2>Our Business</h2>
         </header>
@@ -54,98 +58,105 @@
           lifetime.
         </p>
         <section id="infoBusiness">
-          <article>
-            <img
-              src="images/portraits/portrait1.jpg"
-              alt="portrait pictures"
-              id="currentImgPort"
-            />
-            <div class="infoBox">
-              <h3>Portraits</h3>
-              <p class="infoText">
-                Portraits for your resume, Linkedin or just for your own use. We
-                are experts on taking this type of pictures, both in studio and
-                outdoors. We have all kinds of props you can use and you can
-                also bring your own. Together we will generate a creative idea
-                that we later will put in action. Or you can also just come as
-                you are and we will take care of you.
-              </p>
-              <a href="contact.html" class="bookButton">BOOK</a>
-            </div>
+          <article class="infoBox">
+              <img
+                class="homeImg"
+                src="images/portraits/portrait1.jpg"
+                alt="portrait pictures"
+                id="currentImgPort"
+              />
+              <div>
+                <h3>Portraits</h3>
+                <p class="infoText">
+                  Portraits for your resume, Linkedin or just for your own use.
+                  We are experts on taking this type of pictures, both in studio
+                  and outdoors. We have all kinds of props you can use and you
+                  can also bring your own. Together we will generate a creative
+                  idea that we later will put in action. Or you can also just
+                  come as you are and we will take care of you.
+                </p>
+                <a href="contact.html" class="bookButton">BOOK</a>
+              </div>
           </article>
-          <article>
-            <img
-              src="images/freelance/freelance1.jpg"
-              alt="freelance pictures"
-              id="currentImgFree"
-            />
-            <div class="infoBox">
-              <h3>Freelance Pictures</h3>
-              <p class="infoText">
-                One of our specialties are our freelance pictures. This could be
-                absolutely anything. From pictures of your dog in motion or just
-                a pictures of you in your creative work. You can book one of us
-                or more if you would like, and we will sit down and understand
-                you need and what you need us to do. It is a collaboration,
-                where you are in the focus. Together we can create magic!
-              </p>
-              <a href="contact.html" class="bookButton">BOOK</a>
-            </div>
+          <article class="infoBox">
+              <img
+                class="homeImg"
+                src="images/freelance/freelance1.jpg"
+                alt="freelance pictures"
+                id="currentImgFree"
+              />
+              <div>
+                <h3>Freelance Pictures</h3>
+                <p class="infoText">
+                  One of our specialties are our freelance pictures. This could
+                  be absolutely anything. From pictures of your dog in motion or
+                  just a pictures of you in your creative work. You can book one
+                  of us or more if you would like, and we will sit down and
+                  understand you need and what you need us to do. It is a
+                  collaboration, where you are in the focus. Together we can
+                  create magic!
+                </p>
+                <a href="contact.html" class="bookButton">BOOK</a>
+              </div>
           </article>
-          <article>
-            <img
-              src="images/weddings/wedding3.jpg"
-              alt="portrait pictures"
-              id="currentImgPort"
-            />
-            <div class="infoBox">
-              <h3>Weddings</h3>
-              <p class="infoText">
-                We specialize in documenting weddings through both photography
-                and videography, capturing the magic and beauty of your special
-                day. From the intimate glances to the joyful celebrations, we
-                preserve every meaningful moment with creativity and care. Our
-                team captures both candid shots and cinematic scenes, allowing
-                you to relive the love, laughter, and unforgettable memories of
-                your wedding day through timeless photos and films.
-              </p>
-              <a href="contact.html" class="bookButton">BOOK</a>
-            </div>
+          <article class="infoBox">
+              <img
+                class="homeImg"
+                src="images/weddings/wedding3.jpg"
+                alt="portrait pictures"
+                id="currentImgPort"
+              />
+              <div>
+                <h3>Weddings</h3>
+                <p class="infoText">
+                  We specialize in documenting weddings through both photography
+                  and videography, capturing the magic and beauty of your
+                  special day. From the intimate glances to the joyful
+                  celebrations, we preserve every meaningful moment with
+                  creativity and care. Our team captures both candid shots and
+                  cinematic scenes, allowing you to relive the love, laughter,
+                  and unforgettable memories of your wedding day through
+                  timeless photos and films.
+                </p>
+                <a href="contact.html" class="bookButton">BOOK</a>
+              </div>
           </article>
-          <article>
-            <img
-              src="images/family/family4.jpg"
-              alt="portrait pictures"
-              id="currentImgPort"
-            />
-            <div class="infoBox">
-              <h3>Family</h3>
-              <p class="infoText">
-                At Freyas Photos, we cherish the joy of capturing family
-                connections and the beauty of motherhood. Our family sessions
-                are all about genuine moments—laughs, hugs, and the unique bonds
-                that make your family special. For maternity shoots, we focus on
-                celebrating this precious chapter, highlighting the strength,
-                beauty, and anticipation of motherhood. Whether it’s a playful
-                family portrait or an intimate maternity session, we create
-                timeless images that you’ll treasure for years.
-              </p>
-              <a href="contact.html" class="bookButton">BOOK</a>
-            </div>
+          <article class="infoBox">
+              <img
+                class="homeImg"
+                src="images/family/family4.jpg"
+                alt="portrait pictures"
+                id="currentImgPort"
+              />
+              <div>
+                <h3>Family</h3>
+                <p class="infoText">
+                  At Freyas Photos, we cherish the joy of capturing family
+                  connections and the beauty of motherhood. Our family sessions
+                  are all about genuine moments—laughs, hugs, and the unique
+                  bonds that make your family special. For maternity shoots, we
+                  focus on celebrating this precious chapter, highlighting the
+                  strength, beauty, and anticipation of motherhood. Whether it’s
+                  a playful family portrait or an intimate maternity session, we
+                  create timeless images that you’ll treasure for years.
+                </p>
+                <a href="contact.html" class="bookButton">BOOK</a>
+              </div>
           </article>
-          <article>
-            <img
-              src="images/freelance/freelance3.jpg"
-              alt="picture of a chair with a pink ballon"
-            />
-            <div class="infoBox">
-              <h3>Price List</h3>
-              <p class="infoText">
-                We have a lot to offer and to get a better view of the price you
-                can continue to the price list by pressing the button below.
-              </p>
-              <a href="price.html" class="bookButton">PRICE</a>
-            </div>
+          <article class="infoBox">
+              <img
+                class="homeImg"
+                src="images/freelance/freelance3.jpg"
+                alt="picture of a chair with a pink ballon"
+              />
+              <div class= "aboutBox">
+                <h3>Price List</h3>
+                <p class="infoText">
+                  We have a lot to offer and to get a better view of the price you
+                  can continue to the price list by pressing the button below.
+                </p>
+                <a href="price.html" class="bookButton">PRICE</a>
+              </div>
           </article>
         </section>
         <footer>
@@ -174,6 +185,7 @@
           </div>
         </footer>
       </main>
+      <script src="js/script.js"></script>
     </body>
   </html>
 </html>

@@ -18,8 +18,75 @@
         type="text/css"
         href="styles/styles.css?rnd=12345"
       />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
       <title>Freya Photos</title>
     </head>
-    <body></body>
+    <body>
+      <header id="mainHeader">
+        <h1>Freya Photos</h1>
+        <nav id="navBarHeader">
+          <ul id="navList">
+            <li><a href="home.html">HOME</a></li>
+            <li class="currentPage"><a href="about.html">ABOUT</a></li>
+            <li><a href="price.html">PRICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h2>Price List</h2>
+        <div id="priceBox">
+          <div class="box" data-event="Portraits" data-hours="1" data-images="10" data-price="150" >Portraits</div>
+          <div class="box" data-event="Freelance" data-hours="2" data-images="20" data-price="250" >Freelance</div>
+          <div class="box" data-event="Weddings" data-hours="5" data-images="50" data-price="1000">Weddings</div>
+          <div class="box" data-event="Family" data-hours="2" data-images="15" data-price="200">Family</div>
+        </div>
+        <form action="">
+          <fieldset id="fieldsetPrice">
+            <label for="event" id="event">Chosen Event: </label>
+            <input type="text" name="event" id="event" />
+            <label for="hours">Hours Needed: </label>
+            <input type="number" name="hours" id="hours" min="1" />
+            <label for="numberOfImages">Number Of Images: </label>
+            <input
+              type="text"
+              name="
+          numberOfImages"
+              id="numberOfImages"
+              min="1"
+            />
+            <div id="total">Total: <span id="totalAmount">0 €</span> </div>
+          </fieldset>
+        </form>
+      </main>
+      <footer>
+        <nav id="navBarFooter">
+          <ul id="footerNav">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li class="currentPage"><a href="price.html">PRICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div id="footerContainer">
+          <div class="social-media" class="social-media-icons">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="fa fa-facebook"
+            ></a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="fa fa-instagram"
+            ></a>
+          </div>
+          <p class="copyRight">&copy; 2024 Malin Jakob AB</p>
+        </div>
+      </footer>
+    </body>
   </html>
 </html>

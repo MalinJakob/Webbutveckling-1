@@ -6,7 +6,7 @@ body{
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  gap: em;
+  gap: 0.5em;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -16,6 +16,7 @@ body{
   position: sticky;
   top: 0;
   z-index: 10;
+  border-radius: 4px;
 }
 
 h1{
@@ -27,6 +28,7 @@ h1{
 h2, h3{
   color: #647973;
   letter-spacing: 0.1em;
+  text-align: center;
 }
 
 p{
@@ -89,6 +91,13 @@ main{
   justify-items: center;
 }
 
+#currentImage{
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+
 section{
   display: grid;
   grid-template-columns: 1fr;
@@ -101,38 +110,53 @@ h3{
   color: #4A675A;
   text-align: center;
   padding-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.homeImg{
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);;
+  object-fit: fill;
 }
 
 .infoBox{
-  width: 400px;
   height: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
   background: #D8E1D3;
-  justify-items: center;
   margin-top: 1em;
   margin-bottom: 1em;
+  border-radius: 4px;
 }
 
 .infoText{
   color: #4A675A;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding:1.5em;
   line-height: 1.5em;
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
-
+ 
 .bookButton{
   border: #647973 solid 2px;
   width: 60px;
   height: auto;
   background: #647973;
   color: #D8E1D3;
-  padding: 0.4em;
+  padding: 0.5em;
   margin-bottom: 1em;
   text-decoration: none;
   display: grid;
   justify-content: center;
+  justify-self: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s ease;
 }
 
 .bookButton:hover{
@@ -175,6 +199,7 @@ h3{
 }
 
 footer{
+  padding: 1em;
   background: #647973;
   width: 100%;
 }
@@ -275,3 +300,146 @@ footer{
   color: white;
   text-decoration: none;
 }
+
+address{
+  background: #D8E1D3;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  padding: 1em;
+  color: #647973;
+  font-weight: bold;
+  font-style: normal;
+}
+
+address a{
+  text-decoration: none;
+  color: #647973;
+  font-weight: bold;
+  text-align: center;
+}
+address a:hover{
+  color: #ACB5A0;
+  cursor: pointer;
+}
+
+.contactHeader{
+  margin-top: 0.3em;
+}
+
+form{
+  padding: 1em;
+  width: 90%;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+fieldset{
+  border: #647973 solid 2px;
+  display: grid;
+  justify-content: center;
+}
+
+label{
+  color: #647973;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+#nameLabel{
+  margin-top: 1em;
+}
+
+textarea{
+  resize: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 100px;
+}
+
+input{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 40px;
+}
+
+#sendButton{
+    margin-top: 1em;
+    justify-self: center;
+}
+
+input:focus {
+  background: #ACB5A0;
+}
+
+textarea:focus{
+  background: #ACB5A0;
+}
+
+#priceBox{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  gap: 1em;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.box{
+  padding: 1em;
+  background-color: #D8E1D3;
+  color: #647973;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+  margin: 1em;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.box:hover {
+  background-color: #acb5a0;
+  color: #D8E1D3;
+}
+
+#fieldsetPrice input{
+  width: 150px;
+  height: 40px;
+}
+
+#fieldsetPrice{
+  padding: 1em;
+  border: 1px solid #acb5a0;
+  padding: 1em;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#chosenEvent{
+  margin-top: 1em;
+
+}
+
+#total{
+  background-color: #cfd8c7;
+  padding: 1em;
+  margin-top: 1em;
+  font-weight: bold;
+  color: #647973;
+}
+
+@media only screen and (min-width: 780px) {
+  #infoBusiness{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 1em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #infoBusiness{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 1em;
+  }
+}
+
