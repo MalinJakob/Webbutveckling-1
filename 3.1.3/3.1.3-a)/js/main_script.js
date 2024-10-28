@@ -4,11 +4,6 @@
 
 function getQueryString () {
 
-  //ska jag lägga resten av programmet i funktionen? 
-  window.addEventListener("load", (event) => {
-    console.log("page is fully loaded");
-  });
-
   const queryString = window.location.search
   const searchQuery = new URLSearchParams(queryString)
   const name = searchQuery.get('name')
@@ -104,5 +99,8 @@ function addContact () {
   })
 }
 
-getQueryString()
-addContact()
+window.addEventListener("load", (event) => {
+  console.log("page is fully loaded");
+  getQueryString()
+  addContact()
+});

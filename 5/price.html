@@ -22,6 +22,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       />
+      <script src="js/jquery-3.7.1.js"></script>
       <title>Freya Photos</title>
     </head>
     <body>
@@ -44,21 +45,21 @@
           <div class="box" data-event="Maternity" data-hours="5" data-images="50" data-price="1000">Maternity</div>
           <div class="box" data-event="Family" data-hours="2" data-images="15" data-price="200">Family</div>
         </div>
-        <form action="">
+        <form action="contact.html" method="get">
           <fieldset id="fieldsetPrice">
-            <label for="event" id="event">Chosen Event: </label>
+            <label for="event">Chosen Event: </label>
             <input type="text" name="event" id="event" />
             <label for="hours">Hours Needed: </label>
             <input type="number" name="hours" id="hours" min="1" />
             <label for="numberOfImages">Number Of Images: </label>
             <input
               type="text"
-              name="
-          numberOfImages"
+              name="numberOfImages"
               id="numberOfImages"
               min="1"
             />
-            <div id="total">Total: <span id="totalAmount">0 €</span> </div>
+            <input readonly id="totalAmount" name="totalAmount"/>
+            <input class="bookButton" value="BOOK" type="submit" name="submit" id="submitButton">
           </fieldset>
         </form>
       </main>
@@ -87,6 +88,7 @@
           <p class="copyRight">&copy; 2024 Malin Jakob AB</p>
         </div>
       </footer>
+      <script src="js/price.js"></script>
     </body>
   </html>
 </html>

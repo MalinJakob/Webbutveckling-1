@@ -8,6 +8,7 @@ body{
   grid-auto-rows: auto;
   gap: 0.5em;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 100%;
 }
 
 #mainHeader{
@@ -29,9 +30,12 @@ h2, h3{
   color: #647973;
   letter-spacing: 0.1em;
   text-align: center;
+  font-size: 150%;
 }
 
+
 p{
+  font-size: 100%;
   line-height: 1em;
   color: #4A675A;
 }
@@ -98,7 +102,6 @@ main{
   border-radius: 4px;
 }
 
-
 section{
   display: grid;
   grid-template-columns: 1fr;
@@ -118,9 +121,11 @@ h3{
   width: 100%;
   height: auto;
   border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);;
-  object-fit: fill;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
+
+
 
 .infoBox{
   height: auto;
@@ -144,7 +149,7 @@ h3{
  
 .bookButton{
   border: #647973 solid 2px;
-  width: 60px;
+  width: 50%;
   height: auto;
   background: #647973;
   color: #D8E1D3;
@@ -166,6 +171,10 @@ h3{
   color: #4A675A;
   transition: ease-in 0.1s;
   cursor: pointer;
+}
+
+#submitButton{
+  margin-top: 1em
 }
 
 #aboutUs{
@@ -421,15 +430,25 @@ textarea:focus{
 
 }
 
-#total{
+#totalAmount{
   background-color: #cfd8c7;
   padding: 1em;
   margin-top: 1em;
   font-weight: bold;
   color: #647973;
+  border: #647973;
+  border-radius: 4px;
 }
 
 @media only screen and (min-width: 780px) {
+  p{
+    font-size: 120%
+  }
+
+  h2, h3{
+    font-size: 180%;
+  }
+  
   #infoBusiness{
     display: grid;
     grid-template-columns: repeat(2,auto);
@@ -448,11 +467,21 @@ textarea:focus{
 }
 
 @media only screen and (min-width: 1024px) {
+
+  p{
+    font-size: 160%
+  }
+
+  h2, h3{
+    font-size: 200%;
+  }
+
   #infoBusiness{
     display: grid;
     grid-template-columns: repeat(3,auto);
     gap: 1em;
   }
+
 
   #employSection{
     display: grid;
