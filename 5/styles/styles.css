@@ -49,6 +49,7 @@ p{
   gap:1.5em;
   justify-items: center;
   letter-spacing: 0.2em;
+  margin-bottom: 2em;
 }
 
 #navBarHeader li{
@@ -188,6 +189,7 @@ h3{
   margin-bottom: 3em;
   display: grid;
   justify-items: center;
+  border-radius: 4px;
 }
 
 .roundImage{
@@ -433,10 +435,26 @@ textarea:focus{
     grid-template-columns: repeat(2,auto);
     gap: 1em;
   }
+
+  #infoBox{
+    align-items: center;
+  }
+
+  #employSection{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 1em;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   #infoBusiness{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 1em;
+  }
+
+  #employSection{
     display: grid;
     grid-template-columns: repeat(3,auto);
     gap: 1em;
