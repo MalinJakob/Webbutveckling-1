@@ -354,7 +354,8 @@ fieldset{
 label{
   color: #647973;
   margin-bottom: 0.5em;
-  margin-top: 0.5em;
+  margin-top: 1.5em;
+  font-weight: bold;
 }
 
 #nameLabel{
@@ -370,6 +371,9 @@ textarea{
 input{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   height: 40px;
+  color: #647973;
+  border: #647973 1px solid;
+  border-radius: 4px;
 }
 
 #sendButton{
@@ -378,7 +382,8 @@ input{
 }
 
 input:focus {
-  background: #ACB5A0;
+  background: #647973;
+  color: #D8E1D3;
 }
 
 textarea:focus{
@@ -412,14 +417,18 @@ textarea:focus{
   color: #D8E1D3;
 }
 
+#priceForm{
+  background: #D8E1D3;
+}
+
 #fieldsetPrice input{
   width: 150px;
   height: 40px;
 }
 
-#fieldsetPrice{
+.fieldsetPrice{
   padding: 1em;
-  border: 1px solid #acb5a0;
+  border: none;
   padding: 1em;
   max-width: 400px;
   margin: 0 auto;
@@ -427,17 +436,40 @@ textarea:focus{
 
 #chosenEvent{
   margin-top: 1em;
-
 }
 
 #totalAmount{
-  background-color: #cfd8c7;
+  background-color: #4A675A;
   padding: 1em;
-  margin-top: 1em;
   font-weight: bold;
-  color: #647973;
-  border: #647973;
+  color: #D8E1D3;
+  border: #acb5a0 3px solid;
   border-radius: 4px;
+}
+
+#messageBody{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#messageBox{
+  width: 60%;
+  display: grid;
+  justify-self: center;
+}
+
+#submitImg{
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+#headerMessage{
+  margin-top: 2em;
+}
+
+#messageInfo{
+  text-align: center;
 }
 
 @media only screen and (min-width: 780px) {
@@ -464,6 +496,22 @@ textarea:focus{
     grid-template-columns: repeat(2,auto);
     gap: 1em;
   }
+
+  #priceForm{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 1em;
+  }
+
+  #priceBox{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 1em;
+  }
+  
+  #messageBox{
+    width: 40%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -487,6 +535,9 @@ textarea:focus{
     display: grid;
     grid-template-columns: repeat(3,auto);
     gap: 1em;
+  }
+  #messageBox{
+    width: 30%;
   }
 }
 

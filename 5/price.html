@@ -31,7 +31,7 @@
         <nav id="navBarHeader">
           <ul id="navList">
             <li><a href="home.html">HOME</a></li>
-            <li ><a href="about.html">ABOUT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
             <li class="currentPage"><a href="price.html">PRICES</a></li>
             <li><a href="contact.html">CONTACT</a></li>
           </ul>
@@ -40,13 +40,45 @@
       <main>
         <h2>Price List</h2>
         <div id="priceBox">
-          <div class="box" data-event="Portraits" data-hours="1" data-images="10" data-price="150" >Portraits</div>
-          <div class="box" data-event="Freelance" data-hours="2" data-images="20" data-price="250" >Freelance</div>
-          <div class="box" data-event="Maternity" data-hours="5" data-images="50" data-price="1000">Maternity</div>
-          <div class="box" data-event="Family" data-hours="2" data-images="15" data-price="200">Family</div>
+          <div
+            class="box"
+            data-event="Portraits"
+            data-hours="1"
+            data-images="10"
+            data-price="150"
+          >
+            Portraits
+          </div>
+          <div
+            class="box"
+            data-event="Freelance"
+            data-hours="2"
+            data-images="20"
+            data-price="250"
+          >
+            Freelance
+          </div>
+          <div
+            class="box"
+            data-event="Maternity"
+            data-hours="5"
+            data-images="50"
+            data-price="1000"
+          >
+            Maternity
+          </div>
+          <div
+            class="box"
+            data-event="Family"
+            data-hours="2"
+            data-images="15"
+            data-price="200"
+          >
+            Family
+          </div>
         </div>
-        <form action="contact.html" method="get">
-          <fieldset id="fieldsetPrice">
+        <form action="contact.html" method="get" id="priceForm">
+          <fieldset class="fieldsetPrice">
             <label for="event">Chosen Event: </label>
             <input type="text" name="event" id="event" />
             <label for="hours">Hours Needed: </label>
@@ -58,8 +90,15 @@
               id="numberOfImages"
               min="1"
             />
-            <input readonly id="totalAmount" name="totalAmount"/>
-            <input class="bookButton" value="BOOK" type="submit" name="submit" id="submitButton">
+            <label for="totalAmount">Total: </label>
+            <input readonly id="totalAmount" name="totalAmount" />
+            <input
+              class="bookButton"
+              value="BOOK"
+              type="submit"
+              name="submit"
+              id="submitButton"
+            />
           </fieldset>
         </form>
       </main>
