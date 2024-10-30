@@ -7,35 +7,62 @@ function initPriceBoxes () {
   const hoursInput = document.getElementById('hours')
   const imagesInput = document.getElementById('numberOfImages')
   const totalAmount = document.getElementById('totalAmount')
-  
-
-  let basePrice = 0
-
-  function getTotal () {
-    const hours = parseInt(hoursInput.value) || 0
-    const images = parseInt(imagesInput.value) || 0
-    const total = basePrice + hours * 100 + images * 5
-    totalAmount.value = `$${total}`
-  }
 
   document.querySelectorAll('#priceBox .box').forEach(box => {
-    box.addEventListener('click', () => {
-      const eventName = box.getAttribute('data-event')
-      const defaultHours = box.getAttribute('data-hours')
-      const defaultImages = box.getAttribute('data-images')
-      basePrice = parseInt(box.getAttribute('data-price'))
-
-      eventInput.value = eventName
-      hoursInput.value = defaultHours
-      imagesInput.value = defaultImages
-
-      getTotal()
-    })
+    box.addEventListener('click', () =>
+      selectBox(box, eventInput, hoursInput, imagesInput, totalAmount)
+    )
   })
   hoursInput.addEventListener('input', getTotal)
   imagesInput.addEventListener('input', getTotal)
 }
 
+function getTotal (hoursInput, imagesInput, basePrice) {
+  const hours = parseInt(hoursInput.value) || 0
+  const images = parseInt(imagesInput.value) || 0
+  const total = basePrice + hours * 100 + images * 5
+  return total
+}
+
+function selectBox (box, eventInput, hoursInput, imagesInput, totalAmount) {
+  const eventName = box.getAttribute('data-event')
+  const defaultHours = box.getAttribute('data-hours')
+  const defaultImages = box.getAttribute('data-images')
+  const basePrice = parseInt(box.getAttribute('data-price'))
+
+  eventInput.value = eventName
+  hoursInput.value = defaultHours
+  imagesInput.value = defaultImages
+
+  const total = getTotal(hoursInput, imagesInput, basePrice)
+  totalAmount.value = `$${total}`
+}
+
+function initSelectedBox () {
+  const eventName = getEventName()
+
+  if (!eventName) {
+    return
+  }
+
+  const box = document.getElementById(eventName)
+  if (box) {
+    const eventInput = document.getElementById('event')
+    const hoursInput = document.getElementById('hours')
+    const imagesInput = document.getElementById('numberOfImages')
+    const totalAmount = document.getElementById('totalAmount')
+    selectBox(box, eventInput, hoursInput, imagesInput, totalAmount)
+  }
+}
+
+function getEventName () {
+  const queryString = window.location.search
+  const searchQuery = new URLSearchParams(queryString)
+  const eventName = searchQuery.get('event')
+  return eventName
+}
+
 $(document).ready(function () {
   initPriceBoxes()
+  initSelectedBox()
 })
