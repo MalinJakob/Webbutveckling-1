@@ -1,5 +1,5 @@
-//gather information from form from user to add it to a get 
-//the total amount function where the total amount is shown in 
+//gather information from form from user to add it to a get
+//the total amount function where the total amount is shown in
 //the user face
 
 function initPriceBoxes () {
@@ -7,6 +7,7 @@ function initPriceBoxes () {
   const hoursInput = document.getElementById('hours')
   const imagesInput = document.getElementById('numberOfImages')
   const totalAmount = document.getElementById('totalAmount')
+  
 
   let basePrice = 0
 
@@ -38,4 +39,3 @@ function initPriceBoxes () {
 $(document).ready(function () {
   initPriceBoxes()
 })
-
