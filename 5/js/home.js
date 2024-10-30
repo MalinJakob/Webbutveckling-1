@@ -1,3 +1,5 @@
+//preloading images and generates a images changes 
+//every other second 
 
 function preloadImages () {
   if (document.images) {

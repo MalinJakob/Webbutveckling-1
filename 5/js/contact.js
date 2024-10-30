@@ -1,4 +1,5 @@
-
+//get query string from form to generate input
+//in contact form 
 function getQueryString () {
   const queryString = window.location.search
   const searchQuery = new URLSearchParams(queryString)

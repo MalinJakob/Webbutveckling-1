@@ -33,6 +33,14 @@ h2, h3{
   font-size: 150%;
 }
 
+#infoBusiness h2, h3{
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+#aboutBusiness{
+  justify-items: center;
+}
 
 p{
   font-size: 100%;
@@ -125,6 +133,13 @@ h3{
   object-fit: cover;
 }
 
+.infoImg{
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
 
 
 .infoBox{
@@ -133,7 +148,7 @@ h3{
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
   background: #D8E1D3;
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-bottom: 1em;
   border-radius: 4px;
 }
@@ -148,6 +163,7 @@ h3{
 }
  
 .bookButton{
+  font-size: 100%;
   border: #647973 solid 2px;
   width: 50%;
   height: auto;
@@ -251,6 +267,7 @@ footer{
   justify-items: center;
   margin-block-start: 0;
   padding-inline-start: 0;
+  font-size: 100%;
 }
 
 #footerNav li{
@@ -390,6 +407,7 @@ textarea:focus{
   background: #ACB5A0;
 }
 
+
 #priceBox{
   display: grid;
   grid-template-columns: repeat(2,auto);
@@ -397,6 +415,7 @@ textarea:focus{
   justify-content: center;
   margin-bottom: 1em;
 }
+
 
 .box{
   padding: 1em;
@@ -410,6 +429,7 @@ textarea:focus{
   cursor: pointer;
   border-radius: 4px;
   transition: background 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .box:hover {
@@ -419,6 +439,8 @@ textarea:focus{
 
 #priceForm{
   background: #D8E1D3;
+  border-radius: 4px;
+
 }
 
 #fieldsetPrice input{
@@ -473,18 +495,31 @@ textarea:focus{
 }
 
 @media only screen and (min-width: 780px) {
+  #navBarHeader a{
+    font-size: 130%;
+  }
+
+  .homeImg{
+    width: 90%;
+  }
+  
   p{
     font-size: 120%
   }
-
+  
   h2, h3{
     font-size: 180%;
+  }
+
+  #aboutBusiness{
+    width: 90%;
   }
   
   #infoBusiness{
     display: grid;
     grid-template-columns: repeat(2,auto);
     gap: 1em;
+    width: 90%;
   }
 
   #infoBox{
@@ -497,10 +532,16 @@ textarea:focus{
     gap: 1em;
   }
 
-  #priceForm{
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    gap: 1em;
+  .box{
+    font-size: 120%;
+  }
+
+  label{
+    font-size: 120%;
+  }
+
+  .bookButton{
+    font-size: 120%;
   }
 
   #priceBox{
@@ -508,36 +549,77 @@ textarea:focus{
     grid-template-columns: repeat(4,auto);
     gap: 1em;
   }
-  
+
   #messageBox{
     width: 40%;
+  }
+
+  form{
+    width: 70%;
+  }
+
+  #footerNav a{
+    font-size: 120%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
 
+  #navBarHeader a{
+    font-size: 140%;
+  }
+  
+  .homeImg{
+    width: 80%;
+  }
+
   p{
-    font-size: 160%
+    font-size: 140%
   }
 
   h2, h3{
     font-size: 200%;
   }
 
+  #aboutBusiness{
+    width: 80%;
+  }
+
   #infoBusiness{
     display: grid;
     grid-template-columns: repeat(3,auto);
     gap: 1em;
+    width: 80%;
   }
-
 
   #employSection{
     display: grid;
     grid-template-columns: repeat(3,auto);
     gap: 1em;
   }
+
+  .box{
+    font-size: 140%;
+  }
+
+  label{
+    font-size: 140%;
+  }
+
+  .bookButton{
+    font-size: 140%;
+  }
+
   #messageBox{
     width: 30%;
+  }
+
+  form{
+    width: 50%;
+  }
+
+  #footerNav a{
+    font-size: 140%;
   }
 }
 

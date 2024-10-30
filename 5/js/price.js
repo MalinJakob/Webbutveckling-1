@@ -1,3 +1,7 @@
+//gather information from form from user to add it to a get 
+//the total amount function where the total amount is shown in 
+//the user face
+
 function initPriceBoxes () {
   const eventInput = document.getElementById('event')
   const hoursInput = document.getElementById('hours')
