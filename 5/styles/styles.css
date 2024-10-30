@@ -218,7 +218,13 @@ h3{
   border-radius: 4px;
 }
 
+#employSection{
+  width: 90%;
+}
+
 .roundImage{
+  margin-left: 1em;
+  margin-right: 1em;
   margin-top: 1.5em;
   border-radius: 50%;
   width: 300px;
@@ -516,10 +522,14 @@ textarea:focus{
     font-size: 120%;
   }
 
+  #aboutText{
+    width: 80%;
+  }
 
   #aboutBusiness{
     width: 90%;
   }
+
   
   #infoBusiness{
     display: grid;
@@ -536,6 +546,7 @@ textarea:focus{
     display: grid;
     grid-template-columns: repeat(2,auto);
     gap: 1em;
+    width: 80%;
   }
 
   .box{
@@ -579,8 +590,6 @@ textarea:focus{
   textarea{
     font-size: 120%;
   }
-
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -618,6 +627,7 @@ textarea:focus{
     display: grid;
     grid-template-columns: repeat(3,auto);
     gap: 1em;
+    width: 70%;
   }
   
   .box{
@@ -657,6 +667,10 @@ textarea:focus{
   }
   textarea{
     font-size: 140%;
+  }
+
+  #aboutText{
+    width: 70%;
   }
 }
 
