@@ -1,5 +1,5 @@
-//get query string from form to generate input
-//in contact form 
+//get query string from form to generate message
+//in textarea in contact form 
 
 function getQueryString () {
   const queryString = window.location.search
@@ -15,7 +15,7 @@ function getQueryString () {
   }
   else{
     message.innerText = `Chosen event: ${eventName}
-    Hours ${hours}
+    Hours: ${hours}
     Number of images: ${numImg}
     Total Price : ${total}  `
   }

@@ -1,6 +1,7 @@
 //gather information from form from user to add it to a get
 //the total amount function where the total amount is shown in
 //the user face
+let previousBasePrice = 0
 
 function initPriceBoxes () {
   const eventInput = document.getElementById('event')
@@ -13,15 +14,20 @@ function initPriceBoxes () {
       selectBox(box, eventInput, hoursInput, imagesInput, totalAmount)
     )
   })
-  hoursInput.addEventListener('input', getTotal)
-  imagesInput.addEventListener('input', getTotal)
+  hoursInput.addEventListener('input', () =>
+    getTotal(hoursInput, imagesInput, totalAmount, previousBasePrice)
+  )
+  imagesInput.addEventListener('input', () =>
+    getTotal(hoursInput, imagesInput, totalAmount, previousBasePrice)
+  )
 }
 
-function getTotal (hoursInput, imagesInput, basePrice) {
+function getTotal (hoursInput, imagesInput, totalAmount, basePrice) {
   const hours = parseInt(hoursInput.value) || 0
   const images = parseInt(imagesInput.value) || 0
   const total = basePrice + hours * 100 + images * 5
-  return total
+  previousBasePrice = basePrice
+  totalAmount.value = `$${total}`
 }
 
 function selectBox (box, eventInput, hoursInput, imagesInput, totalAmount) {
@@ -33,9 +39,7 @@ function selectBox (box, eventInput, hoursInput, imagesInput, totalAmount) {
   eventInput.value = eventName
   hoursInput.value = defaultHours
   imagesInput.value = defaultImages
-
-  const total = getTotal(hoursInput, imagesInput, basePrice)
-  totalAmount.value = `$${total}`
+  getTotal(hoursInput, imagesInput, totalAmount, basePrice)
 }
 
 function initSelectedBox () {
