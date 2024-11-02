@@ -1,6 +1,9 @@
 //get query string from form to manipulate message
 //in textarea in contact form 
 
+
+//search the URL for query string and create a message 
+//to display with the values and pre written text
 function getQueryString () {
   const queryString = window.location.search
   const searchQuery = new URLSearchParams(queryString)
@@ -21,6 +24,7 @@ function getQueryString () {
   }
 }
 
+//when document is ready call the function within 
 $(document).ready(function () {
   getQueryString()
 })

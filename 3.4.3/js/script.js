@@ -1,5 +1,11 @@
+//a program that get information from the webb server and show it 
+//on the screen without reloading the whole page
+
 const numberForm = document.getElementById('numberForm')
 
+//disables the submit button until
+//the information is send to the server and then displays the 
+//response as the result
 numberForm.addEventListener('submit', function (event) {
   event.preventDefault()
   const number1 = document.getElementById('number1').value

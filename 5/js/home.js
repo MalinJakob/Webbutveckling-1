@@ -1,6 +1,9 @@
 //preloading images and generates an images change
 //every third second 
 
+//use the Image method to create invisible objects
+//to load in images in the background 
+//when source is assigned the browser will load the image
 function preloadImages () {
   if (document.images) {
     const img1 = new Image()
@@ -41,6 +44,9 @@ const images = [
 ]
 let imgIndex = 0
 
+
+//use an increment to go through the list 
+//and uploads the image in the browser
 function changeImage () {
   imgIndex++
   let currentImage
@@ -48,11 +54,14 @@ function changeImage () {
   $('#currentImage').attr('src', images[currentImage])
 }
 
+//setting a timer to call the changeImage function
+//every 2700 millisecond
 function imageTimer () {
   let changeImageTimer
   changeImageTimer = setInterval(changeImage, 2700)
 }
 
+//when the document is ready, call the functions within 
 $(document).ready(function () {
   preloadImages()
   imageTimer()

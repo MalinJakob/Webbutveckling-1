@@ -23,10 +23,14 @@ function importantDaySaver () {
   const totalDate = myDateString + myDate
   console.log(totalDate)
 
+  //use math to generate a random number and multiplies it 10 and add 1
+  //use the random number plus the day from Date to get a total 
   const random = Math.floor(Math.random() * 10) + 1
   const total = random + dayNumber
   console.log('Number of today + a random number is: ' + total)
 
+  //checks if the total is over 10 and if the day starts with a t or a s, 
+  //if true make text string to upper case and add to important day list 
   const isAGoodWeekday = weekdays[myDate.getDay()].match(/(^t)|(^s)/i)
   if (total > 10 && isAGoodWeekday) {
     const importantDate = 'Important date!! '
