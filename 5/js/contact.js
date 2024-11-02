@@ -1,4 +1,4 @@
-//get query string from form to generate message
+//get query string from form to manipulate message
 //in textarea in contact form 
 
 function getQueryString () {

@@ -1,3 +1,6 @@
+//a program that illustrates animations to text and shapes 
+//and display a message to the user in the end
+
 $('#smallCircle').animate({
   opacity: '0.5',
   height: '150px',

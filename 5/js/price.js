@@ -1,6 +1,8 @@
-//gather information from form from user to add it to a get
-//the total amount function where the total amount is shown in
-//the user face
+// the program manage and calculate costs based on the user's choices in form 
+//by first registering the user's choice of event and the number of hours 
+//and images, and then calculating the total cost
+//then manipulates HTML elements to display the estimated cost
+
 let previousBasePrice = 0
 
 function initPriceBoxes () {

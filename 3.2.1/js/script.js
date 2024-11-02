@@ -1,5 +1,5 @@
 //an preloaded image gallery that changes images each 2 
-//second and when you hover your mouse over the images 
+//second and also when you hover your mouse over the images 
 
 function preloadImages () {
   if (document.images) {

@@ -1,3 +1,4 @@
+//a program that illustrates different effect to text and shapes
 
 $('#smallCircle').hide()
 $('#bigCircle').hide()

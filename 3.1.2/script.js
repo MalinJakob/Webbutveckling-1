@@ -1,5 +1,5 @@
 //parent control where you add how many second you can play 
-//when the seconds are pasted the window closes automatically 
+//when the seconds passed the window closes automatically 
 
 function parentControl () {
   window.alert('Welcome!!')

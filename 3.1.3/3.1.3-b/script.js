@@ -1,11 +1,14 @@
+//program that disables a button for 10 seconds and displays
+// a message if it is clicked within those seconds
+//when user hovers over the button the coordinates of the pointer
+//is logged in the console
+
 const myLink = document.getElementById('myLink')
 
 function notClickable (event){
   event.preventDefault()
     alert('The Button is NOT in Use ')
 }
-
-
 
 function myButtonFunction () {
   
@@ -30,6 +33,5 @@ function myButtonFunction () {
   }
 
 }
-
 
 myButtonFunction()

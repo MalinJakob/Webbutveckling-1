@@ -1,6 +1,6 @@
 //part of the application where you can add contact and how you want 
 //their notices to be and add them to a list for the user to see
-// as an overview 
+//as an overview 
 
 function getQueryString () {
 
