@@ -35,9 +35,8 @@ function imageTimer () {
   changeImageTimer = setInterval(changeImage, 2000)
 }
 
-//when document is ready call the functions within 
-//and catch if the mouse is over the area of the image, 
-//call the changeImage function 
+//when document is ready call the functions within and catch 
+// - if the mouse is over the area of the image, call the changeImage function 
 $(document).ready(function () {
   preloadImages()
   imageTimer()

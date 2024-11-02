@@ -12,6 +12,8 @@ function getQueryString () {
   const numImg =  searchQuery.get('numberOfImages')
   const total =  searchQuery.get('totalAmount')
 
+  // - if no event name do nothing 
+  // - else display text with values 
   const message = document.getElementById('message')
   if (!eventName) {
     message.innerText = ''

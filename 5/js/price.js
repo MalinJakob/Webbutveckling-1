@@ -5,15 +5,15 @@
 
 let previousBasePrice = 0
 
-//adds eventListers to every box and inputs
-//and calls selectedBox function or getTotal function
-//if the user click on them with relevant values
+//takes in values and reacts on events to go to calculate the input of chosen event
 function initPriceBoxes () {
   const eventInput = document.getElementById('event')
   const hoursInput = document.getElementById('hours')
   const imagesInput = document.getElementById('numberOfImages')
   const totalAmount = document.getElementById('totalAmount')
 
+ //add eventListers to every box and inputs and calls selectedBox function or getTotal function
+ //- if the user click on them  send with relevant values
   document.querySelectorAll('#priceBox .box').forEach(box => {
     box.addEventListener('click', () =>
       selectBox(box, eventInput, hoursInput, imagesInput, totalAmount)

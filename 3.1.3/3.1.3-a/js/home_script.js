@@ -9,13 +9,10 @@ function x() {
 document.getElementById("b").addEventListener("click", x);
 
 // use the Math method to generate a random math question confirms if the users answer is correct
-// - a random number between 1 and 10 is generated and added to 2 to create the question
-// - the question is displayed on the page
-// - as the user types, their answer is checked by the eventListner
-// - if the answer is correct, a success message appears and the submit button is enabled
-// - if incorrect, an error message is displayed, and the submit button remains disabled
 function notRobotQuestion () {
 
+  // a random number between 1 and 10 is generated and added to 2 to create the question
+  // the question is displayed on the page
   const randomNum = Math.floor(Math.random() * 10) + 1
   const total = randomNum + 2
   const notRobot = document.getElementById('notRobot')
@@ -24,7 +21,10 @@ function notRobotQuestion () {
   const message = document.getElementById('message')
   const submitButton = document.getElementById('submitButton')
   const userAnswerInput = document.getElementById('userAnswer')
- 
+
+// as the user types their answer is checked by the eventListner
+// - if the answer is correct a success message appears and submit button is enabled
+// - else another messages is displayed and submit button continues to be disable
   userAnswerInput.addEventListener('input', function (event) {
     if (parseInt(event.target.value) === total) {
       message.innerText = 'You are NOT a robot, please continue'
