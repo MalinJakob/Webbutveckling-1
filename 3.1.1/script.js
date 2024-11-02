@@ -1,7 +1,11 @@
-//Takes in todays date and adds it to a list if the day number
-//is over 10 when multiplied with a random number and
-//we only like days starting with a 't' or 's'
+// the program checks 
+// - if todays date qualifies as an important day based on set criteria
+// - criteria: is the day number + random number is > 10, and the weekday must start with 't' or 's'
+// - then todays day number is added to the list of important days
 
+
+//creates a list of weeks and the empty list for important days
+// - use Date method to get todays day and add together with pre written text to display
 function importantDaySaver () {
   globalThis.window.alert("Welcome! Please open to console to use this application")
 
@@ -23,14 +27,13 @@ function importantDaySaver () {
   const totalDate = myDateString + myDate
   console.log(totalDate)
 
-  //use math to generate a random number and multiplies it 10 and add 1
-  //use the random number plus the day from Date to get a total 
+  //use Math method to generate a random number and add it to todays day number
   const random = Math.floor(Math.random() * 10) + 1
   const total = random + dayNumber
   console.log('Number of today + a random number is: ' + total)
 
-  //checks if the total is over 10 and if the day starts with a t or a s, 
-  //if true make text string to upper case and add to important day list 
+  //checks if the total is over 10 and if the day starts with a 't' or a 's', 
+  //- if true make text string to upper case and add to important day list 
   const isAGoodWeekday = weekdays[myDate.getDay()].match(/(^t)|(^s)/i)
   if (total > 10 && isAGoodWeekday) {
     const importantDate = 'Important date!! '

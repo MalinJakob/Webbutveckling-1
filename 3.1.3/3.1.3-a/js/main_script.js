@@ -1,7 +1,8 @@
-//part of the application where you can add contact and how you want 
-//their notices to be and add them to a list for the user to see
-//as an overview 
+//part of the program where you can add contacts and specify how 
+// you want to receive your notices and providing an overview of the added contacts
 
+//search for the query string from the URL
+// - get name and email from query string an use to display welcome message to user 
 function getQueryString () {
 
   const queryString = window.location.search
@@ -13,6 +14,7 @@ function getQueryString () {
     email.match(/^[^@]+/)[0]
   } `
 
+  // changes the class of the header from 'myHeader' to 'differentHeader'
   const classHeader = document.getElementsByClassName('myHeader')
   const myHeader = classHeader[0]
   console.log(myHeader)
@@ -22,11 +24,16 @@ function getQueryString () {
   }
 }
 
+// gets the button and adds event listener 'clicks'
+// - if clicked display 'click'
 const saveContactButton = document.getElementById('addContactButton')
 saveContactButton.addEventListener('click', function () {
   console.log('clicked')
 })
 
+
+// get the 'birthday' input and add eventListener 'keydown' & 'keyup'
+// - when the action is done by the user display the key 
 const birthdayInput = document.getElementById('birthday')
 birthdayInput.addEventListener('keydown' , function (event){
   console.log('Key pressed down: ' + event.key);
@@ -35,13 +42,18 @@ birthdayInput.addEventListener('keyup' , function (event){
   console.log('Key letted go: ' + event.key);
 })
 
+
 const contacts = []
+
+//add contacts to the list 
 function addContact () {
   const contactForm = document.getElementById('contactForm')
   const contactList = document.getElementById('contactList')
   const nameFocus = document.getElementById('contactName')
   nameFocus.focus()
 
+  // add event listener to form submission
+  //get values from the input fields and check if favorite person is clicked 
   contactForm.addEventListener('submit', function (event) {
     event.preventDefault()
 
@@ -56,12 +68,15 @@ function addContact () {
     const favoritePerson = document.getElementById('favoritePerson').checked
 
     let chosenNotices = notification
+    // pre settings to notification options based on the users input
     if (favoritePerson) {
       chosenNotices = ['day', 'week', 'month']
     } else if (notification.includes('all')) {
       chosenNotices = ['day', 'week', 'month']
     }
 
+     // adds contact information to the contacts list
+     //-  if a name is provided
     if (contactName)
       contacts.push({
         contactName,
@@ -70,6 +85,8 @@ function addContact () {
         favoritePerson
       })
 
+    // creates new list item to display contact information
+    // add the new list item to the contact list
     const listItem = document.createElement('li')
     listItem.innerText = `Name: ${contactName}
       Birthday: ${contactBirthday}
@@ -78,8 +95,12 @@ function addContact () {
       `
     contactList.appendChild(listItem)
 
+    // gets the birthday list for the current month using the Date method
     const birthdayMonthList = document.getElementById('birthdayListThisMonth')
     const currentMonth = new Date().getMonth()
+
+    // checks if the contacts birthday is in the current month
+    // - if true add information to the birthdayMonth list
 
     if (currentMonth === new Date(contactBirthday).getMonth()) {
       const listItem = document.createElement('li')
@@ -99,6 +120,7 @@ function addContact () {
   })
 }
 
+//when page is loaded display message and call the functions within
 window.addEventListener("load", (event) => {
   console.log("page is fully loaded");
   getQueryString()

@@ -1,13 +1,19 @@
-//application where you can register to get notices when a
-//added contact hade their birthday, on given times by the user 
+//program that checks if ypu are not a robot and answer a question
+//correct you can continue and displays a message if the date i right  
 
+//when the page is ready a message is shown
 function x() {
   window.alert('Page is ready for yaa!'); 
 }
 
 document.getElementById("b").addEventListener("click", x);
 
-
+// use the Math method to generate a random math question confirms if the users answer is correct
+// - a random number between 1 and 10 is generated and added to 2 to create the question
+// - the question is displayed on the page
+// - as the user types, their answer is checked by the eventListner
+// - if the answer is correct, a success message appears and the submit button is enabled
+// - if incorrect, an error message is displayed, and the submit button remains disabled
 function notRobotQuestion () {
 
   const randomNum = Math.floor(Math.random() * 10) + 1
@@ -31,6 +37,8 @@ function notRobotQuestion () {
   })
 }
 
+//use the Date method to get the todays month
+// - if the month is 9 or 10 the element forFree is removed 
 function notForFree(){
   const getMonth = new Date()
   const todaysMonth = getMonth.getMonth()
