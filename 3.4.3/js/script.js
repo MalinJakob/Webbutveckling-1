@@ -4,7 +4,7 @@
 const numberForm = document.getElementById('numberForm')
 
 //add eventListener to disables the submit button until
-//the information is send to the server and then displays the response as the result
+//the information is sent to the server and then displays the response as the result
 numberForm.addEventListener('submit', function (event) {
   event.preventDefault()
   const number1 = document.getElementById('number1').value

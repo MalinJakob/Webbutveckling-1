@@ -20,7 +20,7 @@ function myButtonFunction () {
   },10000)
   
   // gets button add eventListener and 
-  // - if if the mouse is over the button change the background color
+  // - if the mouse is over the button change the background color
   //- and display the coordinates in console 
   const myButton = document.getElementById('myButton')
   myButton.onmouseover = function (event) {
